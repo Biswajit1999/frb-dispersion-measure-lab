@@ -120,6 +120,19 @@ DM = ∫ n_e dl      [pc cm^-3]
 - Lorimer, D.R. et al., 2007. A bright millisecond radio burst of extragalactic origin. Science, 318(5851), pp.777-780.
 - Petroff, E., Hessels, J.W.T. and Lorimer, D.R., 2019. Fast radio bursts. Astronomy and Astrophysics Review, 27(1), p.4.
 - Macquart, J.-P. et al., 2020. A census of baryons in the Universe from localized fast radio bursts. Nature, 581, pp.391-395.
+- CHIME/FRB Collaboration, Amiri, M. et al., 2021. The First CHIME/FRB Fast Radio Burst Catalog. The Astrophysical Journal Supplement Series, 257(2), p.59.
+- CHIME/FRB Collaboration, 2020. Periodic activity from a fast radio burst source. Nature, 582, pp.351-355.
+
+## Reference Data: A Real CHIME/FRB Event
+
+The reference anchors are no longer generic illustrative points -- they are the arrival-delay
+curve computed from the **actual measured dispersion measure** of **FRB 20180916B**, the first
+periodically-repeating fast radio burst (16.35-day activity cycle, CHIME/FRB Collaboration 2020),
+pulled directly from the public CHIME/FRB catalog (`FRBs/FRB` GitHub repository,
+`CHIME_catalog-2021-1-27.json`): `fitburst_dm = 349.349 +/- 0.006 pc/cm^3`. For scale, the full
+535-burst CHIME catalog spans `DM = 103.4` to `3038.1 pc/cm^3` with a median of `533.1 pc/cm^3`.
+The default `dm` slider value now matches this real burst so the model curve and reference
+anchors agree at their default settings.
 
 ## Research Quality Upgrade
 

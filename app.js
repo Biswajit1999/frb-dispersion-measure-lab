@@ -1,4 +1,4 @@
-const LAB={"id":"frb","title":"FRB Dispersion Measure Lab","xLabel":"Frequency [MHz]","yLabel":"Arrival delay [s]","controls":[["dm","DM [pc cm^-3]",557,50,1800,1],["nuHigh","Reference frequency [MHz]",1600,900,2400,10],["width","Intrinsic width [ms]",3,0.5,30,0.1],["scatter","Scattering index",4,2,5,0.1]]};
+const LAB={"id":"frb","title":"FRB Dispersion Measure Lab","xLabel":"Frequency [MHz]","yLabel":"Arrival delay [s]","controls":[["dm","DM [pc cm^-3]",349.35,50,1800,1],["nuHigh","Reference frequency [MHz]",1600,900,2400,10],["width","Intrinsic width [ms]",3,0.5,30,0.1],["scatter","Scattering index",4,2,5,0.1]]};
 const state={reference:null,params:Object.fromEntries(LAB.controls.map(c=>[c[0],c[2]])),result:null,worker:null,run:0,lastFrame:performance.now(),frames:0};
 const $=id=>document.getElementById(id);
 function fmt(v,d=3){return Number.isFinite(Number(v))?Number(v).toLocaleString('en-US',{maximumFractionDigits:d}):'--'}

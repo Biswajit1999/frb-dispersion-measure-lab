@@ -1,38 +1,42 @@
 {
-  "dataset": "Published FRB dispersion-measure anchors",
-  "source": "Small browser bundle of published FRB discovery DMs used as validation anchors for the cold-plasma law.",
-  "citation": "Petroff, E., Hessels, J.W.T. and Lorimer, D.R., 2019. Fast radio bursts. Astronomy and Astrophysics Review, 27(1), p.4.",
+  "dataset": "Real CHIME/FRB catalog dispersion delay: FRB 20180916B",
+  "source": "FRB 20180916B is the first periodically-repeating fast radio burst discovered by CHIME (its ~16.35-day activity cycle was reported by CHIME/FRB Collaboration, 2020, Nature). Its measured fitburst DM = 349.349 pc/cm^3 (CHIME/FRB Collaboration catalog, Amiri et al. 2021) is used with the exact cold-plasma dispersion law to compute the arrival delay at each frequency below, relative to 1600 MHz.",
+  "source_url": "https://github.com/FRBs/FRB/blob/main/frb/data/FRBs/CHIME_catalog-2021-1-27.json",
+  "citation": "CHIME/FRB Collaboration, Amiri, M. et al., 2021. The First CHIME/FRB Fast Radio Burst Catalog. The Astrophysical Journal Supplement Series, 257(2), p.59.",
+  "measured_dm_pc_cm3": 349.3490751229,
+  "measured_dm_error_pc_cm3": 0.005841100306592,
+  "catalog_summary": "The full CHIME/FRB catalog (535 bursts) spans DM = 103.4 to 3038.1 pc/cm^3 with a median DM of 533.1 pc/cm^3.",
   "x_label": "Frequency [MHz]",
   "y_label": "Arrival delay [s]",
   "points": [
     {
       "x": 400,
-      "y": 34.23,
-      "label": "DM 557 at 400 MHz"
+      "y": 8.4925,
+      "label": "FRB20180916B at 400 MHz"
     },
     {
       "x": 600,
-      "y": 14.48,
-      "label": "DM 557 at 600 MHz"
+      "y": 3.4599,
+      "label": "FRB20180916B at 600 MHz"
     },
     {
       "x": 800,
-      "y": 7.73,
-      "label": "DM 557 at 800 MHz"
+      "y": 1.6985,
+      "label": "FRB20180916B at 800 MHz"
     },
     {
       "x": 1200,
-      "y": 2.65,
-      "label": "DM 557 at 1200 MHz"
+      "y": 0.4404,
+      "label": "FRB20180916B at 1200 MHz"
     },
     {
-      "x": 900,
-      "y": 1.95,
-      "label": "DM 557 at 900 MHz"
+      "x": 1600,
+      "y": 0.0,
+      "label": "FRB20180916B at 1600 MHz (reference)"
     }
   ],
   "requiredCitations": [
     "Lorimer, D.R. et al., 2007. A bright millisecond radio burst of extragalactic origin. Science, 318(5851), pp.777-780.",
-    "Petroff, E., Hessels, J.W.T. and Lorimer, D.R., 2019. Fast radio bursts. Astronomy and Astrophysics Review, 27(1), p.4."
+    "CHIME/FRB Collaboration, Amiri, M. et al., 2021. The First CHIME/FRB Fast Radio Burst Catalog. The Astrophysical Journal Supplement Series, 257(2), p.59."
   ]
 }
