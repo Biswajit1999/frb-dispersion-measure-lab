@@ -1,0 +1,33 @@
+{
+  "dataset": "Published FRB dispersion-measure anchors",
+  "source": "Small browser bundle of published FRB discovery DMs used as validation anchors for the cold-plasma law.",
+  "citation": "Petroff, E., Hessels, J.W.T. and Lorimer, D.R., 2019. Fast radio bursts. Astronomy and Astrophysics Review, 27(1), p.4.",
+  "x_label": "Frequency [MHz]",
+  "y_label": "Arrival delay [s]",
+  "points": [
+    {
+      "x": 400,
+      "y": 34.23,
+      "label": "DM 557 at 400 MHz"
+    },
+    {
+      "x": 600,
+      "y": 14.48,
+      "label": "DM 557 at 600 MHz"
+    },
+    {
+      "x": 800,
+      "y": 7.73,
+      "label": "DM 557 at 800 MHz"
+    },
+    {
+      "x": 1200,
+      "y": 2.65,
+      "label": "DM 557 at 1200 MHz"
+    }
+  ],
+  "requiredCitations": [
+    "Lorimer, D.R. et al., 2007. A bright millisecond radio burst of extragalactic origin. Science, 318(5851), pp.777-780.",
+    "Petroff, E., Hessels, J.W.T. and Lorimer, D.R., 2019. Fast radio bursts. Astronomy and Astrophysics Review, 27(1), p.4."
+  ]
+}
