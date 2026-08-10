@@ -24,6 +24,11 @@
       "x": 1200,
       "y": 2.65,
       "label": "DM 557 at 1200 MHz"
+    },
+    {
+      "x": 900,
+      "y": 1.95,
+      "label": "DM 557 at 900 MHz"
     }
   ],
   "requiredCitations": [
