@@ -1,6 +1,6 @@
 {
   "title": "frb dispersion measure lab",
-  "description": "frb-dispersion-measure-lab upgraded with reproducibility metadata and validation.",
+  "description": "Private fast-radio-burst dispersion lab with cold-plasma sweep simulations and published-DM anchors.",
   "equations": [
     "Repository metadata completeness",
     "Reference-data finite anchor validation",

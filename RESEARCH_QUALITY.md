@@ -4,7 +4,7 @@ This repository has been upgraded with a compact research-quality layer: referen
 
 ## Scope
 
-frb-dispersion-measure-lab upgraded with reproducibility metadata and validation.
+Private fast-radio-burst dispersion lab with cold-plasma sweep simulations and published-DM anchors.
 
 ## Equations And Models
 
