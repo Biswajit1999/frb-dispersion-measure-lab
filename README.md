@@ -41,3 +41,7 @@ Small browser bundle of published FRB discovery DMs used as validation anchors f
 
 - Lorimer, D.R. et al., 2007. A bright millisecond radio burst of extragalactic origin. Science, 318(5851), pp.777-780.
 - Petroff, E., Hessels, J.W.T. and Lorimer, D.R., 2019. Fast radio bursts. Astronomy and Astrophysics Review, 27(1), p.4.
+
+## Research Quality Upgrade
+
+See [RESEARCH_QUALITY.md](RESEARCH_QUALITY.md) for the validation layer, reference anchors, equations and research boundaries added to this repository.
