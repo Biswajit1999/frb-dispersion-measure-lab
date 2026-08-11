@@ -134,6 +134,34 @@ pulled directly from the public CHIME/FRB catalog (`FRBs/FRB` GitHub repository,
 The default `dm` slider value now matches this real burst so the model curve and reference
 anchors agree at their default settings.
 
+## What the DM Actually Tells Us -- and Where That Breaks Down
+
+`macquart_implied_z` converts the current DM into a rough cosmological redshift via the
+Macquart relation (Macquart et al., 2020, *Nature*, 581, pp.391-395): `DM_cosmic(z)` grows
+roughly linearly with `z` at low redshift for standard flat-LCDM cosmology, with a slope of
+about `900 pc/cm^3` per unit `z`, after subtracting a representative Milky Way contribution
+(`~100 pc/cm^3`).
+
+At the default `DM = 349.35 pc/cm^3` (the real measured value for **FRB 20180916B**), this
+gives `z_implied ~ 0.28`. **The real spectroscopically confirmed redshift of FRB 20180916B is
+`z = 0.0337`** (Marcote et al., 2020, *Nature*, 577, pp.190-194, after VLBI host-galaxy
+localisation) -- almost a factor of 10 lower than the naive DM estimate. This mismatch is not
+a bug in the formula; it is the real, well-documented limitation of using DM as a distance
+indicator on its own:
+
+- FRB 20180916B sits at low Galactic latitude, where the actual Milky Way DM contribution
+  along that specific line of sight is substantially higher than the generic `~100 pc/cm^3`
+  assumed here (a real analysis uses a full electron-density model, NE2001 or YMW16, evaluated
+  along the exact line of sight, not a flat constant).
+- The host-galaxy DM contribution is ignored entirely above, but for a low-redshift, actively
+  star-forming host it can itself be a large fraction of the total.
+
+This is exactly why FRB 20180916B, once its host galaxy was VLBI-localised and spectroscopically
+confirmed, became an important **calibration point** for the Macquart relation rather than just
+another data point predicted by it -- real DM-based redshift estimates require either a
+localised host (removing the need to guess) or a statistical ensemble of many bursts to average
+out line-of-sight scatter in the Milky Way and host contributions.
+
 ## Research Quality Upgrade
 
 See [RESEARCH_QUALITY.md](RESEARCH_QUALITY.md) for the validation layer, reference anchors, equations and research boundaries added to this repository.
