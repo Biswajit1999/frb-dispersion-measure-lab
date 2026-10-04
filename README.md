@@ -52,7 +52,6 @@ This is a client-side, zero-build simulation lab: everything runs in the browser
 2. Whenever a control changes, `app.js` posts the current parameters to `physicsWorker.js`, a dedicated Web Worker, so the numerical model runs off the main UI thread and the interface stays responsive.
 3. Inside the worker, the `frb(p)` function evaluates the cold-plasma dispersion law `t(nu) = k_DM * DM * (nu^-2 - nu_ref^-2)` across a 500-point frequency sweep from 350-1800 MHz, using the exact dispersion constant `4.148808e3`. It also computes a small set of summary metrics (delay at 400 MHz, delay at 800 MHz, intrinsic width) and a 96x96 heatmap approximating a frequency-time dynamic spectrum sweep, shaped by the intrinsic pulse width parameter.
 4. The worker posts the resulting series, metrics and heatmap back to the main thread, where `app.js` renders the dispersion curve against the published reference anchors on a Canvas plot, colors the heatmap panel, and updates the telemetry readout.
-5. `research-overlay.js` adds a lightweight, non-invasive status panel reflecting the validation/quality checks described in `RESEARCH_QUALITY.md`.
 
 Note: `physicsWorker.js` is a shared worker module that also implements simulation kernels for several other unrelated labs (CMB spectrum, supernova cosmology, microlensing, galaxy rotation curves, asteroseismology, weak lensing, spectrograph precision, clustering, exoplanet atmospheres). Only the `frb` function is used by this app; the rest of the file is inert here and is inherited from a shared multi-lab worker template.
 
@@ -76,7 +75,6 @@ The validation script (`scripts/validate.js`) checks required files, JSON refere
 npm run validate:research
 ```
 
-Runs `scripts/validate_repository.mjs` against `data/research-reference.json`, a separate small set of benchmark anchors used purely for repository-quality checks (see `RESEARCH_QUALITY.md`).
 
 ## Architecture
 
@@ -161,7 +159,3 @@ confirmed, became an important **calibration point** for the Macquart relation r
 another data point predicted by it -- real DM-based redshift estimates require either a
 localised host (removing the need to guess) or a statistical ensemble of many bursts to average
 out line-of-sight scatter in the Milky Way and host contributions.
-
-## Research Quality Upgrade
-
-See [RESEARCH_QUALITY.md](RESEARCH_QUALITY.md) for the validation layer, reference anchors, equations and research boundaries added to this repository.
