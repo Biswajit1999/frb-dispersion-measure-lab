@@ -1,4 +1,6 @@
-# FRB Dispersion Measure Lab
+# FRB Cosmic Baryon Lab
+
+![FRB Cosmic Baryon Lab scientific interface](assets/social-preview.svg)
 
 Cold-plasma sweep, dynamic spectra and host/IGM DM decomposition.
 
@@ -48,9 +50,9 @@ CHIME (a stationary radio telescope in British Columbia operating at 400-800 MHz
 
 This is a client-side, zero-build simulation lab: everything runs in the browser with no server-side compute.
 
-1. `app.js` defines the lab's control set (DM, reference frequency, intrinsic pulse width, scattering index), builds the slider UI, and on load fetches `data/reference.json` — a small bundle of published DM anchor points (see below) — which are drawn on the plot as fixed reference markers.
+1. `app.js` defines the measured total DM and an explicit line-of-sight budget: Milky Way disk, Milky Way halo, rest-frame host-galaxy contribution, and residual IGM contribution. The host term is divided by `1 + z` before subtraction.
 2. Whenever a control changes, `app.js` posts the current parameters to `physicsWorker.js`, a dedicated Web Worker, so the numerical model runs off the main UI thread and the interface stays responsive.
-3. Inside the worker, the `frb(p)` function evaluates the cold-plasma dispersion law `t(nu) = k_DM * DM * (nu^-2 - nu_ref^-2)` across a 500-point frequency sweep from 350-1800 MHz, using the exact dispersion constant `4.148808e3`. It also computes a small set of summary metrics (delay at 400 MHz, delay at 800 MHz, intrinsic width) and a 96x96 heatmap approximating a frequency-time dynamic spectrum sweep, shaped by the intrinsic pulse width parameter.
+3. Inside the worker, `frb(p)` evaluates the cold-plasma law across a 500-point sweep from 350–1800 MHz. It reports the extragalactic DM, redshift-corrected host term, residual IGM column, a low-redshift Macquart estimate, and the difference from the known host redshift.
 4. The worker posts the resulting series, metrics and heatmap back to the main thread, where `app.js` renders the dispersion curve against the published reference anchors on a Canvas plot, colors the heatmap panel, and updates the telemetry readout.
 
 Note: `physicsWorker.js` is a shared worker module that also implements simulation kernels for several other unrelated labs (CMB spectrum, supernova cosmology, microlensing, galaxy rotation curves, asteroseismology, weak lensing, spectrograph precision, clustering, exoplanet atmospheres). Only the `frb` function is used by this app; the rest of the file is inert here and is inherited from a shared multi-lab worker template.
@@ -61,7 +63,7 @@ Note: `physicsWorker.js` is a shared worker module that also implements simulati
 python -m http.server 8080
 ```
 
-Open `http://localhost:8080` and use the sliders to adjust DM, reference frequency, intrinsic pulse width and scattering index. The dispersion curve and heatmap update live; the four yellow markers are the published DM=557 pc cm^-3 reference anchors loaded from `data/reference.json`.
+Open `http://localhost:8080` and adjust the total DM and foreground/host assumptions. The dispersion curve and dynamic-spectrum schematic update live; the fixed markers use the measured `DM = 349.349 pc cm^-3` of FRB 20180916B.
 
 ## Validate
 
@@ -79,18 +81,17 @@ npm run validate:research
 ## Architecture
 
 - `index.html`: mission-control interface.
-- `styles.css`: dense dark scientific dashboard.
+- `styles.css`: responsive editorial interface with day/night themes.
 - `app.js`: UI state, Canvas rendering and worker orchestration.
 - `physicsWorker.js`: numerical model and heatmap generation.
 - `data/reference.json`: small auditable reference-data bundle (published DM anchors).
 - `data/research-reference.json`: benchmark anchors used by the repository-quality validator.
 - `scripts/validate.js`: no-dependency repository validation.
 - `scripts/validate_repository.mjs`: research-quality/reference-anchor validator.
-- `research-overlay.js`: non-invasive quality/status panel.
 
 ## Reference Data
 
-Small browser bundle of published FRB discovery DMs used as validation anchors for the cold-plasma law: four points at DM = 557 pc cm^-3, giving the predicted delay at 400, 600, 800 and 1200 MHz relative to a 1600 MHz reference frequency, computed from the same `k_DM * DM * (nu^-2 - nu_ref^-2)` law implemented in the worker.
+Small browser bundle derived from the catalogued FRB 20180916B dispersion measure, giving predicted delays at four frequencies relative to a 1600 MHz reference. These are reproducible law-check anchors, not four independent observations.
 
 ## Math Appendix
 
@@ -134,25 +135,20 @@ anchors agree at their default settings.
 
 ## What the DM Actually Tells Us -- and Where That Breaks Down
 
-`macquart_implied_z` converts the current DM into a rough cosmological redshift via the
+`macquart_implied_z` converts the residual IGM DM into a rough cosmological redshift via the
 Macquart relation (Macquart et al., 2020, *Nature*, 581, pp.391-395): `DM_cosmic(z)` grows
 roughly linearly with `z` at low redshift for standard flat-LCDM cosmology, with a slope of
-about `900 pc/cm^3` per unit `z`, after subtracting a representative Milky Way contribution
-(`~100 pc/cm^3`).
+about `900 pc/cm^3` per unit `z`.
 
-At the default `DM = 349.35 pc/cm^3` (the real measured value for **FRB 20180916B**), this
-gives `z_implied ~ 0.28`. **The real spectroscopically confirmed redshift of FRB 20180916B is
-`z = 0.0337`** (Marcote et al., 2020, *Nature*, 577, pp.190-194, after VLBI host-galaxy
-localisation) -- almost a factor of 10 lower than the naive DM estimate. This mismatch is not
-a bug in the formula; it is the real, well-documented limitation of using DM as a distance
-indicator on its own:
+At the default measured `DM = 349.349 pc/cm^3`, the lab starts from adjustable assumptions of
+`DM_MW,disk = 199`, `DM_MW,halo = 50`, and `DM_host,rest = 50 pc/cm^3`. **These defaults are
+teaching assumptions, not fitted measurements.** The known spectroscopic host redshift is
+`z = 0.0337` (Marcote et al. 2020). The remaining mismatch demonstrates why one DM is not a
+precision distance measurement:
 
-- FRB 20180916B sits at low Galactic latitude, where the actual Milky Way DM contribution
-  along that specific line of sight is substantially higher than the generic `~100 pc/cm^3`
-  assumed here (a real analysis uses a full electron-density model, NE2001 or YMW16, evaluated
-  along the exact line of sight, not a flat constant).
-- The host-galaxy DM contribution is ignored entirely above, but for a low-redshift, actively
-  star-forming host it can itself be a large fraction of the total.
+- FRB 20180916B sits at low Galactic latitude, where a real analysis evaluates NE2001 or YMW16
+  along the exact line of sight rather than treating the foreground as a fitted constant.
+- Its actively star-forming host can contribute a substantial, uncertain fraction of the total.
 
 This is exactly why FRB 20180916B, once its host galaxy was VLBI-localised and spectroscopically
 confirmed, became an important **calibration point** for the Macquart relation rather than just

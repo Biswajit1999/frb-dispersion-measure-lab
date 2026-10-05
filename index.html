@@ -4,23 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Cold-plasma sweep, dynamic spectra and host/IGM DM decomposition.">
-  <title>FRB Dispersion Measure Lab</title>
+  <meta property="og:image" content="https://biswajit1999.github.io/frb-dispersion-measure-lab/assets/social-preview.svg">
+  <title>FRB Cosmic Baryon Lab</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#lab">Skip to the laboratory</a>
   <main class="shell">
     <header class="topbar">
       <div>
-        <p class="eyebrow">Research Console</p>
-        <h1>FRB Dispersion Measure Lab</h1>
+        <p class="eyebrow">Radio transient · galaxy baryon laboratory</p>
+        <h1>FRB Cosmic Baryon Lab</h1>
       </div>
-      <div class="status-card">
-        <span id="workerStatus">Worker booting</span>
-        <strong id="frameRate">-- fps</strong>
-      </div>
+      <div class="top-actions"><div class="status-card"><span id="workerStatus">Worker booting</span><strong id="frameRate">-- fps</strong></div><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch colour theme" aria-pressed="false">Light</button></div>
     </header>
 
-    <section class="grid">
+    <section class="research-intro" aria-labelledby="research-question">
+      <div><p class="eyebrow">From pulse sweep to galaxy environment</p><h2 id="research-question">Which electrons delayed FRB 20180916B?</h2><p class="lede">The observed dispersion measure is a line-of-sight inventory: Milky Way disk, Galactic halo, intergalactic medium, host galaxy and the burst environment. Explore that budget while the exact cold-plasma law renders the 350–1800 MHz arrival-time sweep.</p><div class="intro-links"><a href="#lab">Open the baryon budget</a><a href="https://chime-frb-open-data.github.io/catalog/" target="_blank" rel="noopener">CHIME/FRB open data</a></div></div>
+      <dl class="evidence-strip"><div><dt>Observed DM</dt><dd>349.349 pc cm⁻³</dd></div><div><dt>Host redshift</dt><dd>0.0337</dd></div><div><dt>Host</dt><dd>Nearby spiral galaxy</dd></div><div><dt>Reference band</dt><dd>400–800 MHz</dd></div></dl>
+    </section>
+    <section class="method-strip" aria-label="Dispersion-measure budget"><article><span>01</span><h3>Milky Way</h3><p>Separate disk and halo assumptions instead of hiding them inside one subtraction.</p></article><article><span>02</span><h3>Cosmic web</h3><p>Translate the residual electron column into a low-redshift Macquart-relation estimate.</p></article><article><span>03</span><h3>Host galaxy</h3><p>Apply the required 1/(1+z) correction to the host-frame DM contribution.</p></article></section>
+
+    <section class="grid" id="lab" aria-label="Interactive FRB dispersion laboratory">
       <aside class="panel controls">
         <div class="panel-title">
           <span>Controls</span>
@@ -65,7 +70,6 @@
       <a href="https://orcid.org/0009-0002-2411-1891" target="_blank" rel="noopener">ORCID</a>
     </nav>
   </footer>
-  <script src="app.js"></script>
-  <script src="research-overlay.js"></script>
+  <script src="theme.js"></script><script src="app.js"></script>
 </body>
 </html>

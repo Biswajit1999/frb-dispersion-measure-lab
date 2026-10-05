@@ -1,4 +1,4 @@
-const LAB={"id":"frb","title":"FRB Dispersion Measure Lab","xLabel":"Frequency [MHz]","yLabel":"Arrival delay [s]","controls":[["dm","DM [pc cm^-3]",349.35,50,1800,1],["nuHigh","Reference frequency [MHz]",1600,900,2400,10],["width","Intrinsic width [ms]",3,0.5,30,0.1],["scatter","Scattering index",4,2,5,0.1]]};
+const LAB={"id":"frb","title":"FRB Cosmic Baryon Lab","xLabel":"Frequency [MHz]","yLabel":"Arrival delay [s]","controls":[["dm","Observed DM [pc cm^-3]",349.349,50,1800,.1],["dmMW","Milky Way disk DM",199,0,300,1],["dmHalo","Milky Way halo DM",50,0,100,1],["dmHost","Host-frame DM",50,0,300,1],["zHost","Known host redshift",.0337,0,.8,.001],["nuHigh","Reference frequency [MHz]",1600,900,2400,10],["width","Intrinsic width [ms]",3,.5,30,.1]]};
 const state={reference:null,params:Object.fromEntries(LAB.controls.map(c=>[c[0],c[2]])),result:null,worker:null,run:0,lastFrame:performance.now(),frames:0};
 const $=id=>document.getElementById(id);
 function fmt(v,d=3){return Number.isFinite(Number(v))?Number(v).toLocaleString('en-US',{maximumFractionDigits:d}):'--'}
@@ -15,3 +15,4 @@ function renderMetrics(){const root=$('metrics');root.innerHTML='';for(const [k,
 function tick(now){state.frames++;if(now-state.lastFrame>1000){$('frameRate').textContent=Math.round(state.frames*1000/(now-state.lastFrame))+' fps';state.frames=0;state.lastFrame=now}requestAnimationFrame(tick)}
 $('reset').addEventListener('click',()=>{for(const c of LAB.controls){state.params[c[0]]=c[2];$('ctrl-'+c[0]).value=c[2];$('out-'+c[0]).textContent=c[2]}runModel()});
 buildControls();loadReference().then(runModel).catch(err=>{$('workerStatus').textContent='Reference error';$('notes').textContent=err.message});requestAnimationFrame(tick);
+window.addEventListener('lab:theme',()=>{if(state.result)draw()});
