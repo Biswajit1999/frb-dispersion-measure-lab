@@ -1,20 +1,4 @@
-import fs from 'node:fs';
-const required = ['README.md', 'data/research-reference.json'];
-let failures = [];
-for (const file of required) if (!fs.existsSync(file)) failures.push(file + ' missing');
-const ref = JSON.parse(fs.readFileSync('data/research-reference.json', 'utf8'));
-if (!Array.isArray(ref.anchors) || ref.anchors.length < 3) failures.push('reference anchors missing');
-if (!Array.isArray(ref.equations) || ref.equations.length === 0) failures.push('equations missing');
-if (!Array.isArray(ref.references) || ref.references.length === 0) failures.push('references missing');
-for (const anchor of ref.anchors || []) {
-  if (!Number.isFinite(anchor.x) || !Number.isFinite(anchor.y) || !anchor.label) failures.push('invalid anchor');
-}
-const sourceFiles = fs.readdirSync('.').filter(name => /\.(html|css|js|py|ipynb|md)$/i.test(name));
-const combined = sourceFiles.map(name => fs.readFileSync(name, 'utf8')).join('\n');
-const banned = ['TO' + 'DO', 'PLACE' + 'HOLDER', 'insert ' + 'logic', 'coming ' + 'soon'];
-for (const token of banned) if (combined.toLowerCase().includes(token.toLowerCase())) failures.push('unfinished token ' + token);
-if (failures.length) {
-  console.error(failures.join('\n'));
-  process.exit(1);
-}
-console.log('frb-dispersion-measure-lab: research validation passed with ' + ref.anchors.length + ' anchors.');
+import fs from 'node:fs';const d=JSON.parse(fs.readFileSync('data/frb20180916b-analysis.json'));const f=[];
+const delay=d.sweep[0].delay_from_800_s;if(Math.abs(delay-6.793979)>.00001)f.push('dispersion regression');if(Math.abs(d.catalog.dm_median-533.1118)>.001)f.push('catalog median');if(!(d.target.catalog_percentile>24&&d.target.catalog_percentile<25))f.push('percentile');
+const spread=d.sightline.ne2001.excess_after_disk-d.sightline.ymw16.excess_after_disk;if(spread<120)f.push('foreground disagreement missing');if(!d.scope.not_inferred.includes('DM-only redshift'))f.push('claim boundary');
+if(f.length){console.error(f.join('\n'));process.exit(1)}console.log('Research validation passed: law, population, foreground disagreement and claim boundary verified.');

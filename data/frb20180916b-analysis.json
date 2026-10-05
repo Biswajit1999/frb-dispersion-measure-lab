@@ -1,0 +1,4615 @@
+{
+  "schema_version": "2.0.0",
+  "catalog": {
+    "name": "CHIME/FRB Catalog 1",
+    "events": 535,
+    "dm_min": 103.396,
+    "dm_median": 533.1118,
+    "dm_max": 3038.0577,
+    "repeater_bursts": 61,
+    "paper_doi": "10.3847/1538-4365/ac33ab"
+  },
+  "target": {
+    "name": "FRB 20180916B",
+    "dm": 349.3490751229,
+    "dm_error": 0.005841100306592,
+    "snr": 36.7,
+    "pulse_width_ms": 0.765259,
+    "scattering_time_ms": 1.0506337000000001,
+    "peak_frequency_mhz": 603.86962890625,
+    "ra_deg": 29.5,
+    "dec_deg": 65.72,
+    "galactic_l_deg": 129.708749539429,
+    "galactic_b_deg": 3.727840675727299,
+    "host_redshift": 0.0337,
+    "activity_period_days": 16.35,
+    "catalog_percentile": 24.299065420560748
+  },
+  "sweep": [
+    {
+      "frequency_mhz": 400.0,
+      "delay_from_800_s": 6.793979
+    },
+    {
+      "frequency_mhz": 402.5,
+      "delay_from_800_s": 6.681799
+    },
+    {
+      "frequency_mhz": 405.0,
+      "delay_from_800_s": 6.57169
+    },
+    {
+      "frequency_mhz": 407.5,
+      "delay_from_800_s": 6.463601
+    },
+    {
+      "frequency_mhz": 410.0,
+      "delay_from_800_s": 6.357483
+    },
+    {
+      "frequency_mhz": 412.5,
+      "delay_from_800_s": 6.253289
+    },
+    {
+      "frequency_mhz": 415.0,
+      "delay_from_800_s": 6.150972
+    },
+    {
+      "frequency_mhz": 417.5,
+      "delay_from_800_s": 6.050488
+    },
+    {
+      "frequency_mhz": 420.0,
+      "delay_from_800_s": 5.951793
+    },
+    {
+      "frequency_mhz": 422.5,
+      "delay_from_800_s": 5.854844
+    },
+    {
+      "frequency_mhz": 425.0,
+      "delay_from_800_s": 5.759602
+    },
+    {
+      "frequency_mhz": 427.5,
+      "delay_from_800_s": 5.666025
+    },
+    {
+      "frequency_mhz": 430.0,
+      "delay_from_800_s": 5.574076
+    },
+    {
+      "frequency_mhz": 432.5,
+      "delay_from_800_s": 5.483717
+    },
+    {
+      "frequency_mhz": 435.0,
+      "delay_from_800_s": 5.394911
+    },
+    {
+      "frequency_mhz": 437.5,
+      "delay_from_800_s": 5.307623
+    },
+    {
+      "frequency_mhz": 440.0,
+      "delay_from_800_s": 5.221819
+    },
+    {
+      "frequency_mhz": 442.5,
+      "delay_from_800_s": 5.137465
+    },
+    {
+      "frequency_mhz": 445.0,
+      "delay_from_800_s": 5.054528
+    },
+    {
+      "frequency_mhz": 447.5,
+      "delay_from_800_s": 4.972978
+    },
+    {
+      "frequency_mhz": 450.0,
+      "delay_from_800_s": 4.892783
+    },
+    {
+      "frequency_mhz": 452.5,
+      "delay_from_800_s": 4.813914
+    },
+    {
+      "frequency_mhz": 455.0,
+      "delay_from_800_s": 4.736341
+    },
+    {
+      "frequency_mhz": 457.5,
+      "delay_from_800_s": 4.660037
+    },
+    {
+      "frequency_mhz": 460.0,
+      "delay_from_800_s": 4.584973
+    },
+    {
+      "frequency_mhz": 462.5,
+      "delay_from_800_s": 4.511123
+    },
+    {
+      "frequency_mhz": 465.0,
+      "delay_from_800_s": 4.438461
+    },
+    {
+      "frequency_mhz": 467.5,
+      "delay_from_800_s": 4.366961
+    },
+    {
+      "frequency_mhz": 470.0,
+      "delay_from_800_s": 4.2966
+    },
+    {
+      "frequency_mhz": 472.5,
+      "delay_from_800_s": 4.227352
+    },
+    {
+      "frequency_mhz": 475.0,
+      "delay_from_800_s": 4.159195
+    },
+    {
+      "frequency_mhz": 477.5,
+      "delay_from_800_s": 4.092106
+    },
+    {
+      "frequency_mhz": 480.0,
+      "delay_from_800_s": 4.026062
+    },
+    {
+      "frequency_mhz": 482.5,
+      "delay_from_800_s": 3.961042
+    },
+    {
+      "frequency_mhz": 485.0,
+      "delay_from_800_s": 3.897025
+    },
+    {
+      "frequency_mhz": 487.5,
+      "delay_from_800_s": 3.83399
+    },
+    {
+      "frequency_mhz": 490.0,
+      "delay_from_800_s": 3.771918
+    },
+    {
+      "frequency_mhz": 492.5,
+      "delay_from_800_s": 3.710788
+    },
+    {
+      "frequency_mhz": 495.0,
+      "delay_from_800_s": 3.650583
+    },
+    {
+      "frequency_mhz": 497.5,
+      "delay_from_800_s": 3.591282
+    },
+    {
+      "frequency_mhz": 500.0,
+      "delay_from_800_s": 3.532869
+    },
+    {
+      "frequency_mhz": 502.5,
+      "delay_from_800_s": 3.475326
+    },
+    {
+      "frequency_mhz": 505.0,
+      "delay_from_800_s": 3.418635
+    },
+    {
+      "frequency_mhz": 507.5,
+      "delay_from_800_s": 3.36278
+    },
+    {
+      "frequency_mhz": 510.0,
+      "delay_from_800_s": 3.307744
+    },
+    {
+      "frequency_mhz": 512.5,
+      "delay_from_800_s": 3.253512
+    },
+    {
+      "frequency_mhz": 515.0,
+      "delay_from_800_s": 3.200067
+    },
+    {
+      "frequency_mhz": 517.5,
+      "delay_from_800_s": 3.147396
+    },
+    {
+      "frequency_mhz": 520.0,
+      "delay_from_800_s": 3.095482
+    },
+    {
+      "frequency_mhz": 522.5,
+      "delay_from_800_s": 3.044311
+    },
+    {
+      "frequency_mhz": 525.0,
+      "delay_from_800_s": 2.99387
+    },
+    {
+      "frequency_mhz": 527.5,
+      "delay_from_800_s": 2.944144
+    },
+    {
+      "frequency_mhz": 530.0,
+      "delay_from_800_s": 2.89512
+    },
+    {
+      "frequency_mhz": 532.5,
+      "delay_from_800_s": 2.846785
+    },
+    {
+      "frequency_mhz": 535.0,
+      "delay_from_800_s": 2.799127
+    },
+    {
+      "frequency_mhz": 537.5,
+      "delay_from_800_s": 2.752131
+    },
+    {
+      "frequency_mhz": 540.0,
+      "delay_from_800_s": 2.705787
+    },
+    {
+      "frequency_mhz": 542.5,
+      "delay_from_800_s": 2.660082
+    },
+    {
+      "frequency_mhz": 545.0,
+      "delay_from_800_s": 2.615004
+    },
+    {
+      "frequency_mhz": 547.5,
+      "delay_from_800_s": 2.570543
+    },
+    {
+      "frequency_mhz": 550.0,
+      "delay_from_800_s": 2.526686
+    },
+    {
+      "frequency_mhz": 552.5,
+      "delay_from_800_s": 2.483424
+    },
+    {
+      "frequency_mhz": 555.0,
+      "delay_from_800_s": 2.440745
+    },
+    {
+      "frequency_mhz": 557.5,
+      "delay_from_800_s": 2.398638
+    },
+    {
+      "frequency_mhz": 560.0,
+      "delay_from_800_s": 2.357095
+    },
+    {
+      "frequency_mhz": 562.5,
+      "delay_from_800_s": 2.316104
+    },
+    {
+      "frequency_mhz": 565.0,
+      "delay_from_800_s": 2.275656
+    },
+    {
+      "frequency_mhz": 567.5,
+      "delay_from_800_s": 2.235741
+    },
+    {
+      "frequency_mhz": 570.0,
+      "delay_from_800_s": 2.196351
+    },
+    {
+      "frequency_mhz": 572.5,
+      "delay_from_800_s": 2.157475
+    },
+    {
+      "frequency_mhz": 575.0,
+      "delay_from_800_s": 2.119105
+    },
+    {
+      "frequency_mhz": 577.5,
+      "delay_from_800_s": 2.081233
+    },
+    {
+      "frequency_mhz": 580.0,
+      "delay_from_800_s": 2.043849
+    },
+    {
+      "frequency_mhz": 582.5,
+      "delay_from_800_s": 2.006945
+    },
+    {
+      "frequency_mhz": 585.0,
+      "delay_from_800_s": 1.970514
+    },
+    {
+      "frequency_mhz": 587.5,
+      "delay_from_800_s": 1.934546
+    },
+    {
+      "frequency_mhz": 590.0,
+      "delay_from_800_s": 1.899035
+    },
+    {
+      "frequency_mhz": 592.5,
+      "delay_from_800_s": 1.863973
+    },
+    {
+      "frequency_mhz": 595.0,
+      "delay_from_800_s": 1.829351
+    },
+    {
+      "frequency_mhz": 597.5,
+      "delay_from_800_s": 1.795163
+    },
+    {
+      "frequency_mhz": 600.0,
+      "delay_from_800_s": 1.761402
+    },
+    {
+      "frequency_mhz": 602.5,
+      "delay_from_800_s": 1.72806
+    },
+    {
+      "frequency_mhz": 605.0,
+      "delay_from_800_s": 1.695131
+    },
+    {
+      "frequency_mhz": 607.5,
+      "delay_from_800_s": 1.662607
+    },
+    {
+      "frequency_mhz": 610.0,
+      "delay_from_800_s": 1.630482
+    },
+    {
+      "frequency_mhz": 612.5,
+      "delay_from_800_s": 1.59875
+    },
+    {
+      "frequency_mhz": 615.0,
+      "delay_from_800_s": 1.567404
+    },
+    {
+      "frequency_mhz": 617.5,
+      "delay_from_800_s": 1.536438
+    },
+    {
+      "frequency_mhz": 620.0,
+      "delay_from_800_s": 1.505846
+    },
+    {
+      "frequency_mhz": 622.5,
+      "delay_from_800_s": 1.475621
+    },
+    {
+      "frequency_mhz": 625.0,
+      "delay_from_800_s": 1.445759
+    },
+    {
+      "frequency_mhz": 627.5,
+      "delay_from_800_s": 1.416253
+    },
+    {
+      "frequency_mhz": 630.0,
+      "delay_from_800_s": 1.387097
+    },
+    {
+      "frequency_mhz": 632.5,
+      "delay_from_800_s": 1.358286
+    },
+    {
+      "frequency_mhz": 635.0,
+      "delay_from_800_s": 1.329815
+    },
+    {
+      "frequency_mhz": 637.5,
+      "delay_from_800_s": 1.301679
+    },
+    {
+      "frequency_mhz": 640.0,
+      "delay_from_800_s": 1.273871
+    },
+    {
+      "frequency_mhz": 642.5,
+      "delay_from_800_s": 1.246387
+    },
+    {
+      "frequency_mhz": 645.0,
+      "delay_from_800_s": 1.219223
+    },
+    {
+      "frequency_mhz": 647.5,
+      "delay_from_800_s": 1.192372
+    },
+    {
+      "frequency_mhz": 650.0,
+      "delay_from_800_s": 1.165831
+    },
+    {
+      "frequency_mhz": 652.5,
+      "delay_from_800_s": 1.139594
+    },
+    {
+      "frequency_mhz": 655.0,
+      "delay_from_800_s": 1.113657
+    },
+    {
+      "frequency_mhz": 657.5,
+      "delay_from_800_s": 1.088015
+    },
+    {
+      "frequency_mhz": 660.0,
+      "delay_from_800_s": 1.062664
+    },
+    {
+      "frequency_mhz": 662.5,
+      "delay_from_800_s": 1.0376
+    },
+    {
+      "frequency_mhz": 665.0,
+      "delay_from_800_s": 1.012817
+    },
+    {
+      "frequency_mhz": 667.5,
+      "delay_from_800_s": 0.988313
+    },
+    {
+      "frequency_mhz": 670.0,
+      "delay_from_800_s": 0.964082
+    },
+    {
+      "frequency_mhz": 672.5,
+      "delay_from_800_s": 0.940121
+    },
+    {
+      "frequency_mhz": 675.0,
+      "delay_from_800_s": 0.916426
+    },
+    {
+      "frequency_mhz": 677.5,
+      "delay_from_800_s": 0.892993
+    },
+    {
+      "frequency_mhz": 680.0,
+      "delay_from_800_s": 0.869817
+    },
+    {
+      "frequency_mhz": 682.5,
+      "delay_from_800_s": 0.846896
+    },
+    {
+      "frequency_mhz": 685.0,
+      "delay_from_800_s": 0.824226
+    },
+    {
+      "frequency_mhz": 687.5,
+      "delay_from_800_s": 0.801802
+    },
+    {
+      "frequency_mhz": 690.0,
+      "delay_from_800_s": 0.779621
+    },
+    {
+      "frequency_mhz": 692.5,
+      "delay_from_800_s": 0.757681
+    },
+    {
+      "frequency_mhz": 695.0,
+      "delay_from_800_s": 0.735976
+    },
+    {
+      "frequency_mhz": 697.5,
+      "delay_from_800_s": 0.714505
+    },
+    {
+      "frequency_mhz": 700.0,
+      "delay_from_800_s": 0.693263
+    },
+    {
+      "frequency_mhz": 702.5,
+      "delay_from_800_s": 0.672248
+    },
+    {
+      "frequency_mhz": 705.0,
+      "delay_from_800_s": 0.651456
+    },
+    {
+      "frequency_mhz": 707.5,
+      "delay_from_800_s": 0.630883
+    },
+    {
+      "frequency_mhz": 710.0,
+      "delay_from_800_s": 0.610528
+    },
+    {
+      "frequency_mhz": 712.5,
+      "delay_from_800_s": 0.590387
+    },
+    {
+      "frequency_mhz": 715.0,
+      "delay_from_800_s": 0.570456
+    },
+    {
+      "frequency_mhz": 717.5,
+      "delay_from_800_s": 0.550734
+    },
+    {
+      "frequency_mhz": 720.0,
+      "delay_from_800_s": 0.531216
+    },
+    {
+      "frequency_mhz": 722.5,
+      "delay_from_800_s": 0.511901
+    },
+    {
+      "frequency_mhz": 725.0,
+      "delay_from_800_s": 0.492786
+    },
+    {
+      "frequency_mhz": 727.5,
+      "delay_from_800_s": 0.473867
+    },
+    {
+      "frequency_mhz": 730.0,
+      "delay_from_800_s": 0.455142
+    },
+    {
+      "frequency_mhz": 732.5,
+      "delay_from_800_s": 0.436608
+    },
+    {
+      "frequency_mhz": 735.0,
+      "delay_from_800_s": 0.418264
+    },
+    {
+      "frequency_mhz": 737.5,
+      "delay_from_800_s": 0.400105
+    },
+    {
+      "frequency_mhz": 740.0,
+      "delay_from_800_s": 0.38213
+    },
+    {
+      "frequency_mhz": 742.5,
+      "delay_from_800_s": 0.364337
+    },
+    {
+      "frequency_mhz": 745.0,
+      "delay_from_800_s": 0.346722
+    },
+    {
+      "frequency_mhz": 747.5,
+      "delay_from_800_s": 0.329284
+    },
+    {
+      "frequency_mhz": 750.0,
+      "delay_from_800_s": 0.31202
+    },
+    {
+      "frequency_mhz": 752.5,
+      "delay_from_800_s": 0.294927
+    },
+    {
+      "frequency_mhz": 755.0,
+      "delay_from_800_s": 0.278005
+    },
+    {
+      "frequency_mhz": 757.5,
+      "delay_from_800_s": 0.261249
+    },
+    {
+      "frequency_mhz": 760.0,
+      "delay_from_800_s": 0.244659
+    },
+    {
+      "frequency_mhz": 762.5,
+      "delay_from_800_s": 0.228231
+    },
+    {
+      "frequency_mhz": 765.0,
+      "delay_from_800_s": 0.211964
+    },
+    {
+      "frequency_mhz": 767.5,
+      "delay_from_800_s": 0.195856
+    },
+    {
+      "frequency_mhz": 770.0,
+      "delay_from_800_s": 0.179905
+    },
+    {
+      "frequency_mhz": 772.5,
+      "delay_from_800_s": 0.164108
+    },
+    {
+      "frequency_mhz": 775.0,
+      "delay_from_800_s": 0.148464
+    },
+    {
+      "frequency_mhz": 777.5,
+      "delay_from_800_s": 0.13297
+    },
+    {
+      "frequency_mhz": 780.0,
+      "delay_from_800_s": 0.117625
+    },
+    {
+      "frequency_mhz": 782.5,
+      "delay_from_800_s": 0.102427
+    },
+    {
+      "frequency_mhz": 785.0,
+      "delay_from_800_s": 0.087374
+    },
+    {
+      "frequency_mhz": 787.5,
+      "delay_from_800_s": 0.072465
+    },
+    {
+      "frequency_mhz": 790.0,
+      "delay_from_800_s": 0.057696
+    },
+    {
+      "frequency_mhz": 792.5,
+      "delay_from_800_s": 0.043067
+    },
+    {
+      "frequency_mhz": 795.0,
+      "delay_from_800_s": 0.028576
+    },
+    {
+      "frequency_mhz": 797.5,
+      "delay_from_800_s": 0.014221
+    },
+    {
+      "frequency_mhz": 800.0,
+      "delay_from_800_s": 0.0
+    }
+  ],
+  "histogram": [
+    {
+      "lo": 100.0,
+      "hi": 200.0,
+      "count": 37
+    },
+    {
+      "lo": 200.0,
+      "hi": 300.0,
+      "count": 53
+    },
+    {
+      "lo": 300.0,
+      "hi": 400.0,
+      "count": 88
+    },
+    {
+      "lo": 400.0,
+      "hi": 500.0,
+      "count": 71
+    },
+    {
+      "lo": 500.0,
+      "hi": 600.0,
+      "count": 61
+    },
+    {
+      "lo": 600.0,
+      "hi": 700.0,
+      "count": 55
+    },
+    {
+      "lo": 700.0,
+      "hi": 800.0,
+      "count": 34
+    },
+    {
+      "lo": 800.0,
+      "hi": 900.0,
+      "count": 29
+    },
+    {
+      "lo": 900.0,
+      "hi": 1000.0,
+      "count": 14
+    },
+    {
+      "lo": 1000.0,
+      "hi": 1100.0,
+      "count": 16
+    },
+    {
+      "lo": 1100.0,
+      "hi": 1200.0,
+      "count": 26
+    },
+    {
+      "lo": 1200.0,
+      "hi": 1300.0,
+      "count": 10
+    },
+    {
+      "lo": 1300.0,
+      "hi": 1400.0,
+      "count": 12
+    },
+    {
+      "lo": 1400.0,
+      "hi": 1500.0,
+      "count": 6
+    },
+    {
+      "lo": 1500.0,
+      "hi": 1600.0,
+      "count": 1
+    },
+    {
+      "lo": 1600.0,
+      "hi": 1700.0,
+      "count": 4
+    },
+    {
+      "lo": 1700.0,
+      "hi": 1800.0,
+      "count": 4
+    },
+    {
+      "lo": 1800.0,
+      "hi": 1900.0,
+      "count": 2
+    },
+    {
+      "lo": 1900.0,
+      "hi": 2000.0,
+      "count": 2
+    },
+    {
+      "lo": 2000.0,
+      "hi": 2100.0,
+      "count": 3
+    },
+    {
+      "lo": 2100.0,
+      "hi": 2200.0,
+      "count": 1
+    },
+    {
+      "lo": 2200.0,
+      "hi": 2300.0,
+      "count": 3
+    },
+    {
+      "lo": 2300.0,
+      "hi": 2400.0,
+      "count": 0
+    },
+    {
+      "lo": 2400.0,
+      "hi": 2500.0,
+      "count": 1
+    },
+    {
+      "lo": 2500.0,
+      "hi": 2600.0,
+      "count": 0
+    },
+    {
+      "lo": 2600.0,
+      "hi": 2700.0,
+      "count": 1
+    },
+    {
+      "lo": 2700.0,
+      "hi": 2800.0,
+      "count": 0
+    },
+    {
+      "lo": 2800.0,
+      "hi": 2900.0,
+      "count": 0
+    },
+    {
+      "lo": 2900.0,
+      "hi": 3000.0,
+      "count": 0
+    },
+    {
+      "lo": 3000.0,
+      "hi": 3100.0,
+      "count": 1
+    }
+  ],
+  "events": [
+    {
+      "name": "FRB20180729B",
+      "dm": 317.2235,
+      "snr": 22.0,
+      "repeater": false,
+      "galactic_latitude": 15.684
+    },
+    {
+      "name": "FRB20180806A",
+      "dm": 739.9482,
+      "snr": 14.4,
+      "repeater": false,
+      "galactic_latitude": 38.403
+    },
+    {
+      "name": "FRB20180817A",
+      "dm": 1006.7714,
+      "snr": 65.1,
+      "repeater": false,
+      "galactic_latitude": 53.981
+    },
+    {
+      "name": "FRB20180906A",
+      "dm": 383.4564,
+      "snr": 10.9,
+      "repeater": false,
+      "galactic_latitude": 40.606
+    },
+    {
+      "name": "FRB20180810A",
+      "dm": 414.8804,
+      "snr": 16.5,
+      "repeater": false,
+      "galactic_latitude": 14.059
+    },
+    {
+      "name": "FRB20180729A",
+      "dm": 109.5942,
+      "snr": 206.6,
+      "repeater": false,
+      "galactic_latitude": 61.157
+    },
+    {
+      "name": "FRB20180916B",
+      "dm": 349.3491,
+      "snr": 36.7,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20180814B",
+      "dm": 238.3474,
+      "snr": 24.4,
+      "repeater": false,
+      "galactic_latitude": 37.618
+    },
+    {
+      "name": "FRB20180814A",
+      "dm": 189.2855,
+      "snr": 22.1,
+      "repeater": true,
+      "galactic_latitude": 16.584
+    },
+    {
+      "name": "FRB20180922A",
+      "dm": 555.6872,
+      "snr": 32.4,
+      "repeater": false,
+      "galactic_latitude": 9.285
+    },
+    {
+      "name": "FRB20180907A",
+      "dm": 877.2402,
+      "snr": 25.4,
+      "repeater": false,
+      "galactic_latitude": -14.651
+    },
+    {
+      "name": "FRB20180904A",
+      "dm": 361.1374,
+      "snr": 74.6,
+      "repeater": false,
+      "galactic_latitude": 26.22
+    },
+    {
+      "name": "FRB20181018B",
+      "dm": 293.867,
+      "snr": 51.3,
+      "repeater": false,
+      "galactic_latitude": 12.121
+    },
+    {
+      "name": "FRB20180909A",
+      "dm": 408.6472,
+      "snr": 13.9,
+      "repeater": false,
+      "galactic_latitude": 33.668
+    },
+    {
+      "name": "FRB20180906B",
+      "dm": 3038.0577,
+      "snr": 17.9,
+      "repeater": false,
+      "galactic_latitude": 60.268
+    },
+    {
+      "name": "FRB20181019C",
+      "dm": 501.6356,
+      "snr": 16.2,
+      "repeater": false,
+      "galactic_latitude": 39.696
+    },
+    {
+      "name": "FRB20180915A",
+      "dm": 371.0293,
+      "snr": 16.3,
+      "repeater": false,
+      "galactic_latitude": 10.041
+    },
+    {
+      "name": "FRB20180801A",
+      "dm": 655.728,
+      "snr": 40.9,
+      "repeater": false,
+      "galactic_latitude": 15.464
+    },
+    {
+      "name": "FRB20180907C",
+      "dm": 638.1999,
+      "snr": 17.1,
+      "repeater": false,
+      "galactic_latitude": 15.665
+    },
+    {
+      "name": "FRB20181025A",
+      "dm": 592.5644,
+      "snr": 20.8,
+      "repeater": false,
+      "galactic_latitude": 25.493
+    },
+    {
+      "name": "FRB20180916C",
+      "dm": 2252.8735,
+      "snr": 15.6,
+      "repeater": false,
+      "galactic_latitude": 21.709
+    },
+    {
+      "name": "FRB20180924A",
+      "dm": 1116.5456,
+      "snr": 21.4,
+      "repeater": false,
+      "galactic_latitude": -21.96
+    },
+    {
+      "name": "FRB20180915B",
+      "dm": 177.127,
+      "snr": 36.1,
+      "repeater": false,
+      "galactic_latitude": 60.927
+    },
+    {
+      "name": "FRB20181118B",
+      "dm": 422.2771,
+      "snr": 19.5,
+      "repeater": false,
+      "galactic_latitude": -31.889
+    },
+    {
+      "name": "FRB20180917B",
+      "dm": 857.0376,
+      "snr": 24.3,
+      "repeater": false,
+      "galactic_latitude": 35.371
+    },
+    {
+      "name": "FRB20181012B",
+      "dm": 715.1895,
+      "snr": 16.1,
+      "repeater": false,
+      "galactic_latitude": 51.974
+    },
+    {
+      "name": "FRB20180916A",
+      "dm": 296.0275,
+      "snr": 32.5,
+      "repeater": false,
+      "galactic_latitude": 18.229
+    },
+    {
+      "name": "FRB20181119C",
+      "dm": 284.9594,
+      "snr": 40.7,
+      "repeater": false,
+      "galactic_latitude": 34.958
+    },
+    {
+      "name": "FRB20180919B",
+      "dm": 560.2214,
+      "snr": 18.8,
+      "repeater": false,
+      "galactic_latitude": -56.141
+    },
+    {
+      "name": "FRB20181013C",
+      "dm": 1005.7658,
+      "snr": 15.1,
+      "repeater": false,
+      "galactic_latitude": 49.484
+    },
+    {
+      "name": "FRB20180919A",
+      "dm": 188.8494,
+      "snr": 14.6,
+      "repeater": true,
+      "galactic_latitude": 16.584
+    },
+    {
+      "name": "FRB20181125A",
+      "dm": 272.19,
+      "snr": 34.5,
+      "repeater": false,
+      "galactic_latitude": 51.024
+    },
+    {
+      "name": "FRB20180920B",
+      "dm": 463.3962,
+      "snr": 15.8,
+      "repeater": false,
+      "galactic_latitude": 53.59
+    },
+    {
+      "name": "FRB20181015A",
+      "dm": 568.8231,
+      "snr": 13.3,
+      "repeater": false,
+      "galactic_latitude": 33.246
+    },
+    {
+      "name": "FRB20180920A",
+      "dm": 555.6639,
+      "snr": 20.2,
+      "repeater": false,
+      "galactic_latitude": -5.87
+    },
+    {
+      "name": "FRB20181128D",
+      "dm": 146.5012,
+      "snr": 55.3,
+      "repeater": false,
+      "galactic_latitude": 53.69
+    },
+    {
+      "name": "FRB20180923A",
+      "dm": 219.4397,
+      "snr": 24.3,
+      "repeater": false,
+      "galactic_latitude": 13.828
+    },
+    {
+      "name": "FRB20181022C",
+      "dm": 528.4733,
+      "snr": 14.2,
+      "repeater": false,
+      "galactic_latitude": 30.886
+    },
+    {
+      "name": "FRB20180923C",
+      "dm": 173.9839,
+      "snr": 17.7,
+      "repeater": false,
+      "galactic_latitude": 48.064
+    },
+    {
+      "name": "FRB20181209A",
+      "dm": 328.6557,
+      "snr": 47.4,
+      "repeater": false,
+      "galactic_latitude": 23.472
+    },
+    {
+      "name": "FRB20181013E",
+      "dm": 345.297,
+      "snr": 12.8,
+      "repeater": false,
+      "galactic_latitude": 17.098
+    },
+    {
+      "name": "FRB20180727A",
+      "dm": 642.1337,
+      "snr": 12.2,
+      "repeater": false,
+      "galactic_latitude": 85.603
+    },
+    {
+      "name": "FRB20181022E",
+      "dm": 285.9865,
+      "snr": 18.8,
+      "repeater": false,
+      "galactic_latitude": 64.85
+    },
+    {
+      "name": "FRB20181019A",
+      "dm": 348.778,
+      "snr": 27.8,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20181215A",
+      "dm": 412.6317,
+      "snr": 11.8,
+      "repeater": false,
+      "galactic_latitude": 10.119
+    },
+    {
+      "name": "FRB20181014D",
+      "dm": 377.1324,
+      "snr": 13.9,
+      "repeater": false,
+      "galactic_latitude": 52.538
+    },
+    {
+      "name": "FRB20180907D",
+      "dm": 1447.0983,
+      "snr": 13.8,
+      "repeater": false,
+      "galactic_latitude": 26.565
+    },
+    {
+      "name": "FRB20181030C",
+      "dm": 668.7601,
+      "snr": 17.0,
+      "repeater": false,
+      "galactic_latitude": -21.773
+    },
+    {
+      "name": "FRB20181101A",
+      "dm": 1472.6782,
+      "snr": 41.2,
+      "repeater": false,
+      "galactic_latitude": -8.665
+    },
+    {
+      "name": "FRB20181218C",
+      "dm": 384.1532,
+      "snr": 13.5,
+      "repeater": false,
+      "galactic_latitude": 21.236
+    },
+    {
+      "name": "FRB20181017B",
+      "dm": 307.3689,
+      "snr": 18.6,
+      "repeater": false,
+      "galactic_latitude": 34.926
+    },
+    {
+      "name": "FRB20180911A",
+      "dm": 221.2538,
+      "snr": 26.8,
+      "repeater": false,
+      "galactic_latitude": 26.69
+    },
+    {
+      "name": "FRB20181030E",
+      "dm": 159.6902,
+      "snr": 37.7,
+      "repeater": false,
+      "galactic_latitude": 33.156
+    },
+    {
+      "name": "FRB20181118A",
+      "dm": 557.4068,
+      "snr": 13.9,
+      "repeater": false,
+      "galactic_latitude": -67.998
+    },
+    {
+      "name": "FRB20181219B",
+      "dm": 1952.166,
+      "snr": 43.0,
+      "repeater": false,
+      "galactic_latitude": 45.071
+    },
+    {
+      "name": "FRB20181018C",
+      "dm": 411.1927,
+      "snr": 41.7,
+      "repeater": false,
+      "galactic_latitude": -7.684
+    },
+    {
+      "name": "FRB20180928A",
+      "dm": 252.7681,
+      "snr": 66.0,
+      "repeater": false,
+      "galactic_latitude": -8.584
+    },
+    {
+      "name": "FRB20180730A",
+      "dm": 848.9041,
+      "snr": 89.8,
+      "repeater": false,
+      "galactic_latitude": 25.108
+    },
+    {
+      "name": "FRB20181104C",
+      "dm": 580.8176,
+      "snr": 101.3,
+      "repeater": false,
+      "galactic_latitude": -13.474
+    },
+    {
+      "name": "FRB20181124B",
+      "dm": 801.6446,
+      "snr": 33.8,
+      "repeater": false,
+      "galactic_latitude": -12.894
+    },
+    {
+      "name": "FRB20181220B",
+      "dm": 257.7994,
+      "snr": 24.7,
+      "repeater": false,
+      "galactic_latitude": 27.501
+    },
+    {
+      "name": "FRB20181019B",
+      "dm": 725.1841,
+      "snr": 10.9,
+      "repeater": false,
+      "galactic_latitude": 7.096
+    },
+    {
+      "name": "FRB20181014B",
+      "dm": 887.972,
+      "snr": 26.2,
+      "repeater": false,
+      "galactic_latitude": -13.822
+    },
+    {
+      "name": "FRB20180810B",
+      "dm": 169.1385,
+      "snr": 55.1,
+      "repeater": false,
+      "galactic_latitude": 33.816
+    },
+    {
+      "name": "FRB20181117B",
+      "dm": 538.2,
+      "snr": 18.9,
+      "repeater": false,
+      "galactic_latitude": 23.058
+    },
+    {
+      "name": "FRB20181126A",
+      "dm": 494.2168,
+      "snr": 111.0,
+      "repeater": false,
+      "galactic_latitude": 29.941
+    },
+    {
+      "name": "FRB20181223A",
+      "dm": 349.7096,
+      "snr": 67.2,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20181102A",
+      "dm": 414.4649,
+      "snr": 11.9,
+      "repeater": false,
+      "galactic_latitude": -6.212
+    },
+    {
+      "name": "FRB20180907B",
+      "dm": 658.1899,
+      "snr": 19.3,
+      "repeater": false,
+      "galactic_latitude": -42.996
+    },
+    {
+      "name": "FRB20181119D",
+      "dm": 564.3668,
+      "snr": 41.8,
+      "repeater": true,
+      "galactic_latitude": -0.224
+    },
+    {
+      "name": "FRB20181214C",
+      "dm": 632.7849,
+      "snr": 39.9,
+      "repeater": false,
+      "galactic_latitude": 55.127
+    },
+    {
+      "name": "FRB20181226D",
+      "dm": 385.3778,
+      "snr": 34.7,
+      "repeater": false,
+      "galactic_latitude": 24.704
+    },
+    {
+      "name": "FRB20181118C",
+      "dm": 190.167,
+      "snr": 17.8,
+      "repeater": true,
+      "galactic_latitude": 16.584
+    },
+    {
+      "name": "FRB20181028A",
+      "dm": 189.1063,
+      "snr": 98.4,
+      "repeater": true,
+      "galactic_latitude": 16.584
+    },
+    {
+      "name": "FRB20180908B",
+      "dm": 195.2393,
+      "snr": 30.2,
+      "repeater": true,
+      "galactic_latitude": 42.876
+    },
+    {
+      "name": "FRB20181122B",
+      "dm": 225.7555,
+      "snr": 122.9,
+      "repeater": false,
+      "galactic_latitude": 27.172
+    },
+    {
+      "name": "FRB20181215B",
+      "dm": 494.0142,
+      "snr": 29.8,
+      "repeater": false,
+      "galactic_latitude": 38.237
+    },
+    {
+      "name": "FRB20181231A",
+      "dm": 1376.7324,
+      "snr": 39.3,
+      "repeater": false,
+      "galactic_latitude": -39.22
+    },
+    {
+      "name": "FRB20181119B",
+      "dm": 609.1008,
+      "snr": 150.9,
+      "repeater": false,
+      "galactic_latitude": 1.089
+    },
+    {
+      "name": "FRB20181116A",
+      "dm": 355.433,
+      "snr": 35.9,
+      "repeater": false,
+      "galactic_latitude": -51.224
+    },
+    {
+      "name": "FRB20180917A",
+      "dm": 189.9167,
+      "snr": 46.6,
+      "repeater": true,
+      "galactic_latitude": 16.584
+    },
+    {
+      "name": "FRB20181128C",
+      "dm": 618.35,
+      "snr": 22.2,
+      "repeater": false,
+      "galactic_latitude": 29.204
+    },
+    {
+      "name": "FRB20181216A",
+      "dm": 542.7376,
+      "snr": 15.7,
+      "repeater": false,
+      "galactic_latitude": 8.999
+    },
+    {
+      "name": "FRB20180725A",
+      "dm": 715.8093,
+      "snr": 33.2,
+      "repeater": false,
+      "galactic_latitude": 21.29
+    },
+    {
+      "name": "FRB20190103B",
+      "dm": 541.1288,
+      "snr": 26.4,
+      "repeater": false,
+      "galactic_latitude": 1.072
+    },
+    {
+      "name": "FRB20181124A",
+      "dm": 1108.5325,
+      "snr": 10.3,
+      "repeater": false,
+      "galactic_latitude": 51.988
+    },
+    {
+      "name": "FRB20181120B",
+      "dm": 349.7359,
+      "snr": 22.1,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20180918A",
+      "dm": 1453.9882,
+      "snr": 24.4,
+      "repeater": false,
+      "galactic_latitude": 17.107
+    },
+    {
+      "name": "FRB20181129B",
+      "dm": 405.905,
+      "snr": 25.7,
+      "repeater": false,
+      "galactic_latitude": 23.243
+    },
+    {
+      "name": "FRB20181219A",
+      "dm": 451.8062,
+      "snr": 16.3,
+      "repeater": true,
+      "galactic_latitude": 12.301
+    },
+    {
+      "name": "FRB20180812A",
+      "dm": 802.4506,
+      "snr": 20.5,
+      "repeater": false,
+      "galactic_latitude": 17.963
+    },
+    {
+      "name": "FRB20190104A",
+      "dm": 549.4329,
+      "snr": 24.4,
+      "repeater": false,
+      "galactic_latitude": -7.007
+    },
+    {
+      "name": "FRB20181208A",
+      "dm": 562.7768,
+      "snr": 29.7,
+      "repeater": false,
+      "galactic_latitude": 32.296
+    },
+    {
+      "name": "FRB20181122A",
+      "dm": 662.8206,
+      "snr": 14.9,
+      "repeater": false,
+      "galactic_latitude": 1.885
+    },
+    {
+      "name": "FRB20180921A",
+      "dm": 394.3718,
+      "snr": 11.1,
+      "repeater": false,
+      "galactic_latitude": -54.272
+    },
+    {
+      "name": "FRB20181202B",
+      "dm": 825.8834,
+      "snr": 20.1,
+      "repeater": false,
+      "galactic_latitude": 51.872
+    },
+    {
+      "name": "FRB20181220A",
+      "dm": 209.4017,
+      "snr": 40.1,
+      "repeater": false,
+      "galactic_latitude": -10.731
+    },
+    {
+      "name": "FRB20180911C",
+      "dm": 189.8448,
+      "snr": 23.3,
+      "repeater": true,
+      "galactic_latitude": 16.584
+    },
+    {
+      "name": "FRB20190112A",
+      "dm": 425.8474,
+      "snr": 66.1,
+      "repeater": false,
+      "galactic_latitude": 35.448
+    },
+    {
+      "name": "FRB20181214A",
+      "dm": 468.148,
+      "snr": 45.2,
+      "repeater": false,
+      "galactic_latitude": -2.371
+    },
+    {
+      "name": "FRB20181128A",
+      "dm": 450.3823,
+      "snr": 35.7,
+      "repeater": true,
+      "galactic_latitude": 12.301
+    },
+    {
+      "name": "FRB20181017A",
+      "dm": 1281.8751,
+      "snr": 22.4,
+      "repeater": true,
+      "galactic_latitude": 34.801
+    },
+    {
+      "name": "FRB20181203C",
+      "dm": 2444.57,
+      "snr": 22.5,
+      "repeater": false,
+      "galactic_latitude": 44.088
+    },
+    {
+      "name": "FRB20181222B",
+      "dm": 619.2478,
+      "snr": 12.7,
+      "repeater": false,
+      "galactic_latitude": 7.454
+    },
+    {
+      "name": "FRB20180923D",
+      "dm": 329.3996,
+      "snr": 91.0,
+      "repeater": false,
+      "galactic_latitude": 61.621
+    },
+    {
+      "name": "FRB20190116D",
+      "dm": 1164.0249,
+      "snr": 16.5,
+      "repeater": false,
+      "galactic_latitude": 19.031
+    },
+    {
+      "name": "FRB20181218B",
+      "dm": 753.4046,
+      "snr": 14.9,
+      "repeater": false,
+      "galactic_latitude": 6.592
+    },
+    {
+      "name": "FRB20181130A",
+      "dm": 220.0896,
+      "snr": 43.7,
+      "repeater": false,
+      "galactic_latitude": -14.663
+    },
+    {
+      "name": "FRB20181018A",
+      "dm": 1129.4488,
+      "snr": 12.9,
+      "repeater": false,
+      "galactic_latitude": -11.236
+    },
+    {
+      "name": "FRB20181213A",
+      "dm": 678.6716,
+      "snr": 21.6,
+      "repeater": false,
+      "galactic_latitude": 32.803
+    },
+    {
+      "name": "FRB20181223C",
+      "dm": 112.5118,
+      "snr": 28.3,
+      "repeater": false,
+      "galactic_latitude": 79.505
+    },
+    {
+      "name": "FRB20180925A",
+      "dm": 237.742,
+      "snr": 13.7,
+      "repeater": false,
+      "galactic_latitude": 21.055
+    },
+    {
+      "name": "FRB20190122B",
+      "dm": 469.5646,
+      "snr": 9.6,
+      "repeater": false,
+      "galactic_latitude": -26.991
+    },
+    {
+      "name": "FRB20181219C",
+      "dm": 647.8913,
+      "snr": 27.7,
+      "repeater": false,
+      "galactic_latitude": -48.487
+    },
+    {
+      "name": "FRB20181201B",
+      "dm": 876.5768,
+      "snr": 17.4,
+      "repeater": false,
+      "galactic_latitude": 27.433
+    },
+    {
+      "name": "FRB20181027A",
+      "dm": 727.744,
+      "snr": 22.3,
+      "repeater": false,
+      "galactic_latitude": 23.399
+    },
+    {
+      "name": "FRB20181214F",
+      "dm": 2105.7552,
+      "snr": 20.2,
+      "repeater": false,
+      "galactic_latitude": 38.526
+    },
+    {
+      "name": "FRB20181224E",
+      "dm": 581.8537,
+      "snr": 42.1,
+      "repeater": false,
+      "galactic_latitude": 41.772
+    },
+    {
+      "name": "FRB20181013B",
+      "dm": 277.5066,
+      "snr": 29.9,
+      "repeater": false,
+      "galactic_latitude": 17.779
+    },
+    {
+      "name": "FRB20190124D",
+      "dm": 340.1195,
+      "snr": 13.4,
+      "repeater": false,
+      "galactic_latitude": 33.203
+    },
+    {
+      "name": "FRB20181221B",
+      "dm": 1395.021,
+      "snr": 52.1,
+      "repeater": false,
+      "galactic_latitude": 23.255
+    },
+    {
+      "name": "FRB20181202A",
+      "dm": 667.9546,
+      "snr": 40.6,
+      "repeater": false,
+      "galactic_latitude": -40.721
+    },
+    {
+      "name": "FRB20181119A",
+      "dm": 364.0912,
+      "snr": 21.8,
+      "repeater": true,
+      "galactic_latitude": 51.969
+    },
+    {
+      "name": "FRB20181222E",
+      "dm": 327.9797,
+      "snr": 36.7,
+      "repeater": false,
+      "galactic_latitude": 24.719
+    },
+    {
+      "name": "FRB20181230C",
+      "dm": 1037.194,
+      "snr": 16.5,
+      "repeater": false,
+      "galactic_latitude": 43.896
+    },
+    {
+      "name": "FRB20181014A",
+      "dm": 1314.8896,
+      "snr": 20.6,
+      "repeater": false,
+      "galactic_latitude": 4.187
+    },
+    {
+      "name": "FRB20190128B",
+      "dm": 248.2302,
+      "snr": 21.4,
+      "repeater": false,
+      "galactic_latitude": 31.355
+    },
+    {
+      "name": "FRB20181222A",
+      "dm": 348.7365,
+      "snr": 214.4,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20181213B",
+      "dm": 626.5932,
+      "snr": 16.3,
+      "repeater": false,
+      "galactic_latitude": 62.547
+    },
+    {
+      "name": "FRB20181127A",
+      "dm": 930.3168,
+      "snr": 27.6,
+      "repeater": false,
+      "galactic_latitude": 44.61
+    },
+    {
+      "name": "FRB20181225A",
+      "dm": 349.6194,
+      "snr": 31.8,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20181231B",
+      "dm": 197.1697,
+      "snr": 55.1,
+      "repeater": false,
+      "galactic_latitude": 36.549
+    },
+    {
+      "name": "FRB20180907E",
+      "dm": 383.3594,
+      "snr": 20.3,
+      "repeater": false,
+      "galactic_latitude": 62.036
+    },
+    {
+      "name": "FRB20181020A",
+      "dm": 1112.4728,
+      "snr": 12.2,
+      "repeater": false,
+      "galactic_latitude": 19.699
+    },
+    {
+      "name": "FRB20190130B",
+      "dm": 989.0307,
+      "snr": 65.4,
+      "repeater": false,
+      "galactic_latitude": 67.803
+    },
+    {
+      "name": "FRB20181226E",
+      "dm": 308.7619,
+      "snr": 20.9,
+      "repeater": false,
+      "galactic_latitude": 20.421
+    },
+    {
+      "name": "FRB20181214D",
+      "dm": 1177.3189,
+      "snr": 28.5,
+      "repeater": false,
+      "galactic_latitude": 67.411
+    },
+    {
+      "name": "FRB20181214B",
+      "dm": 1120.7461,
+      "snr": 13.3,
+      "repeater": false,
+      "galactic_latitude": 43.883
+    },
+    {
+      "name": "FRB20181226C",
+      "dm": 409.0184,
+      "snr": 25.3,
+      "repeater": false,
+      "galactic_latitude": -14.73
+    },
+    {
+      "name": "FRB20190102A",
+      "dm": 699.1727,
+      "snr": 50.0,
+      "repeater": false,
+      "galactic_latitude": -36.041
+    },
+    {
+      "name": "FRB20180910A",
+      "dm": 684.4081,
+      "snr": 50.4,
+      "repeater": false,
+      "galactic_latitude": 25.446
+    },
+    {
+      "name": "FRB20181022D",
+      "dm": 514.3343,
+      "snr": 52.1,
+      "repeater": false,
+      "galactic_latitude": 75.079
+    },
+    {
+      "name": "FRB20190131C",
+      "dm": 507.7618,
+      "snr": 21.7,
+      "repeater": false,
+      "galactic_latitude": 60.053
+    },
+    {
+      "name": "FRB20181230A",
+      "dm": 769.6112,
+      "snr": 29.7,
+      "repeater": false,
+      "galactic_latitude": 21.144
+    },
+    {
+      "name": "FRB20181224B",
+      "dm": 781.0087,
+      "snr": 22.4,
+      "repeater": false,
+      "galactic_latitude": -11.029
+    },
+    {
+      "name": "FRB20181217A",
+      "dm": 1177.1666,
+      "snr": 15.8,
+      "repeater": false,
+      "galactic_latitude": 19.547
+    },
+    {
+      "name": "FRB20181228C",
+      "dm": 510.7003,
+      "snr": 10.3,
+      "repeater": false,
+      "galactic_latitude": 31.869
+    },
+    {
+      "name": "FRB20190104B",
+      "dm": 530.1367,
+      "snr": 12.8,
+      "repeater": false,
+      "galactic_latitude": 37.536
+    },
+    {
+      "name": "FRB20180925B",
+      "dm": 667.8661,
+      "snr": 16.1,
+      "repeater": false,
+      "galactic_latitude": 46.525
+    },
+    {
+      "name": "FRB20181030B",
+      "dm": 103.6425,
+      "snr": 32.9,
+      "repeater": true,
+      "galactic_latitude": 39.985
+    },
+    {
+      "name": "FRB20190102B",
+      "dm": 367.1642,
+      "snr": 31.9,
+      "repeater": false,
+      "galactic_latitude": -40.74
+    },
+    {
+      "name": "FRB20181227A",
+      "dm": 791.2134,
+      "snr": 11.1,
+      "repeater": false,
+      "galactic_latitude": 16.086
+    },
+    {
+      "name": "FRB20181218A",
+      "dm": 1874.4063,
+      "snr": 30.8,
+      "repeater": false,
+      "galactic_latitude": 8.631
+    },
+    {
+      "name": "FRB20181229B",
+      "dm": 389.0471,
+      "snr": 22.2,
+      "repeater": false,
+      "galactic_latitude": 47.833
+    },
+    {
+      "name": "FRB20190114A",
+      "dm": 887.3924,
+      "snr": 21.1,
+      "repeater": false,
+      "galactic_latitude": -43.547
+    },
+    {
+      "name": "FRB20181013A",
+      "dm": 309.3055,
+      "snr": 31.4,
+      "repeater": false,
+      "galactic_latitude": 31.477
+    },
+    {
+      "name": "FRB20181030D",
+      "dm": 289.4422,
+      "snr": 29.2,
+      "repeater": false,
+      "galactic_latitude": -10.441
+    },
+    {
+      "name": "FRB20190202A",
+      "dm": 307.3605,
+      "snr": 236.3,
+      "repeater": false,
+      "galactic_latitude": -37.76
+    },
+    {
+      "name": "FRB20190103C",
+      "dm": 1349.1327,
+      "snr": 34.2,
+      "repeater": false,
+      "galactic_latitude": 6.19
+    },
+    {
+      "name": "FRB20181228A",
+      "dm": 748.6791,
+      "snr": 18.1,
+      "repeater": false,
+      "galactic_latitude": -52.259
+    },
+    {
+      "name": "FRB20181221A",
+      "dm": 316.2369,
+      "snr": 78.8,
+      "repeater": false,
+      "galactic_latitude": 56.344
+    },
+    {
+      "name": "FRB20181230E",
+      "dm": 1041.7133,
+      "snr": 20.5,
+      "repeater": false,
+      "galactic_latitude": 27.654
+    },
+    {
+      "name": "FRB20190116F",
+      "dm": 316.9203,
+      "snr": 15.3,
+      "repeater": false,
+      "galactic_latitude": 31.581
+    },
+    {
+      "name": "FRB20181014C",
+      "dm": 752.1671,
+      "snr": 11.1,
+      "repeater": false,
+      "galactic_latitude": 28.364
+    },
+    {
+      "name": "FRB20181104B",
+      "dm": 350.1386,
+      "snr": 18.6,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20190211A",
+      "dm": 1188.256,
+      "snr": 27.8,
+      "repeater": false,
+      "galactic_latitude": 13.594
+    },
+    {
+      "name": "FRB20190105A",
+      "dm": 383.5506,
+      "snr": 10.5,
+      "repeater": false,
+      "galactic_latitude": 31.407
+    },
+    {
+      "name": "FRB20181222C",
+      "dm": 1104.8922,
+      "snr": 17.5,
+      "repeater": false,
+      "galactic_latitude": 35.381
+    },
+    {
+      "name": "FRB20190103E",
+      "dm": 736.2453,
+      "snr": 13.5,
+      "repeater": false,
+      "galactic_latitude": 32.607
+    },
+    {
+      "name": "FRB20190122A",
+      "dm": 1231.2058,
+      "snr": 19.8,
+      "repeater": false,
+      "galactic_latitude": -21.772
+    },
+    {
+      "name": "FRB20181030A",
+      "dm": 103.396,
+      "snr": 10.8,
+      "repeater": true,
+      "galactic_latitude": 39.985
+    },
+    {
+      "name": "FRB20181115A",
+      "dm": 981.6132,
+      "snr": 25.2,
+      "repeater": false,
+      "galactic_latitude": 44.201
+    },
+    {
+      "name": "FRB20190212B",
+      "dm": 600.1866,
+      "snr": 41.6,
+      "repeater": false,
+      "galactic_latitude": 43.614
+    },
+    {
+      "name": "FRB20190113A",
+      "dm": 428.9235,
+      "snr": 12.6,
+      "repeater": false,
+      "galactic_latitude": 3.326
+    },
+    {
+      "name": "FRB20190106A",
+      "dm": 340.0615,
+      "snr": 12.7,
+      "repeater": false,
+      "galactic_latitude": -16.264
+    },
+    {
+      "name": "FRB20181223B",
+      "dm": 565.655,
+      "snr": 21.3,
+      "repeater": false,
+      "galactic_latitude": 72.739
+    },
+    {
+      "name": "FRB20190107B",
+      "dm": 166.0939,
+      "snr": 26.8,
+      "repeater": false,
+      "galactic_latitude": 20.929
+    },
+    {
+      "name": "FRB20190124F",
+      "dm": 254.7903,
+      "snr": 60.2,
+      "repeater": false,
+      "galactic_latitude": -43.875
+    },
+    {
+      "name": "FRB20181104A",
+      "dm": 349.4388,
+      "snr": 53.9,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20181116B",
+      "dm": 409.8764,
+      "snr": 25.8,
+      "repeater": false,
+      "galactic_latitude": 44.642
+    },
+    {
+      "name": "FRB20190213C",
+      "dm": 357.0634,
+      "snr": 11.5,
+      "repeater": false,
+      "galactic_latitude": -4.025
+    },
+    {
+      "name": "FRB20190115B",
+      "dm": 748.2931,
+      "snr": 25.2,
+      "repeater": false,
+      "galactic_latitude": 23.431
+    },
+    {
+      "name": "FRB20190110A",
+      "dm": 472.7526,
+      "snr": 63.0,
+      "repeater": false,
+      "galactic_latitude": -1.948
+    },
+    {
+      "name": "FRB20181224D",
+      "dm": 690.1957,
+      "snr": 12.8,
+      "repeater": false,
+      "galactic_latitude": 61.257
+    },
+    {
+      "name": "FRB20190110B",
+      "dm": 486.1184,
+      "snr": 18.8,
+      "repeater": false,
+      "galactic_latitude": 38.681
+    },
+    {
+      "name": "FRB20190128D",
+      "dm": 430.2312,
+      "snr": 15.5,
+      "repeater": false,
+      "galactic_latitude": 7.46
+    },
+    {
+      "name": "FRB20181117A",
+      "dm": 959.2801,
+      "snr": 13.5,
+      "repeater": false,
+      "galactic_latitude": 48.069
+    },
+    {
+      "name": "FRB20181117C",
+      "dm": 1773.7387,
+      "snr": 36.0,
+      "repeater": false,
+      "galactic_latitude": -24.397
+    },
+    {
+      "name": "FRB20190222D",
+      "dm": 895.2976,
+      "snr": 12.6,
+      "repeater": false,
+      "galactic_latitude": -11.917
+    },
+    {
+      "name": "FRB20190116E",
+      "dm": 1491.0006,
+      "snr": 12.4,
+      "repeater": false,
+      "galactic_latitude": -10.348
+    },
+    {
+      "name": "FRB20190116C",
+      "dm": 629.2765,
+      "snr": 210.6,
+      "repeater": false,
+      "galactic_latitude": 36.26
+    },
+    {
+      "name": "FRB20181230B",
+      "dm": 1137.3599,
+      "snr": 17.6,
+      "repeater": false,
+      "galactic_latitude": 16.92
+    },
+    {
+      "name": "FRB20190116A",
+      "dm": 445.4831,
+      "snr": 19.9,
+      "repeater": true,
+      "galactic_latitude": 89.528
+    },
+    {
+      "name": "FRB20190129A",
+      "dm": 484.7608,
+      "snr": 18.8,
+      "repeater": false,
+      "galactic_latitude": -32.314
+    },
+    {
+      "name": "FRB20181120C",
+      "dm": 191.704,
+      "snr": 15.1,
+      "repeater": true,
+      "galactic_latitude": 16.584
+    },
+    {
+      "name": "FRB20181119E",
+      "dm": 1169.7677,
+      "snr": 11.3,
+      "repeater": false,
+      "galactic_latitude": -2.295
+    },
+    {
+      "name": "FRB20190224A",
+      "dm": 818.4,
+      "snr": 28.6,
+      "repeater": false,
+      "galactic_latitude": 22.58
+    },
+    {
+      "name": "FRB20190117D",
+      "dm": 1178.0633,
+      "snr": 20.1,
+      "repeater": false,
+      "galactic_latitude": 75.345
+    },
+    {
+      "name": "FRB20190124C",
+      "dm": 303.644,
+      "snr": 148.1,
+      "repeater": false,
+      "galactic_latitude": 68.486
+    },
+    {
+      "name": "FRB20181231C",
+      "dm": 556.086,
+      "snr": 27.7,
+      "repeater": false,
+      "galactic_latitude": 47.875
+    },
+    {
+      "name": "FRB20190124A",
+      "dm": 1275.8535,
+      "snr": 39.5,
+      "repeater": false,
+      "galactic_latitude": -4.642
+    },
+    {
+      "name": "FRB20190131E",
+      "dm": 279.8006,
+      "snr": 50.7,
+      "repeater": false,
+      "galactic_latitude": 36.196
+    },
+    {
+      "name": "FRB20181123A",
+      "dm": 798.7184,
+      "snr": 19.7,
+      "repeater": false,
+      "galactic_latitude": 12.942
+    },
+    {
+      "name": "FRB20190226C",
+      "dm": 827.77,
+      "snr": 15.9,
+      "repeater": false,
+      "galactic_latitude": -35.93
+    },
+    {
+      "name": "FRB20190121A",
+      "dm": 425.3534,
+      "snr": 45.8,
+      "repeater": false,
+      "galactic_latitude": 16.248
+    },
+    {
+      "name": "FRB20190125B",
+      "dm": 178.2383,
+      "snr": 26.2,
+      "repeater": false,
+      "galactic_latitude": 52.575
+    },
+    {
+      "name": "FRB20190103A",
+      "dm": 364.5627,
+      "snr": 40.0,
+      "repeater": true,
+      "galactic_latitude": 51.969
+    },
+    {
+      "name": "FRB20190204A",
+      "dm": 449.6385,
+      "snr": 13.8,
+      "repeater": false,
+      "galactic_latitude": 49.682
+    },
+    {
+      "name": "FRB20190201A",
+      "dm": 242.0038,
+      "snr": 15.4,
+      "repeater": false,
+      "galactic_latitude": 23.825
+    },
+    {
+      "name": "FRB20181129A",
+      "dm": 385.9684,
+      "snr": 34.7,
+      "repeater": false,
+      "galactic_latitude": -16.127
+    },
+    {
+      "name": "FRB20181128B",
+      "dm": 456.5476,
+      "snr": 17.2,
+      "repeater": false,
+      "galactic_latitude": 58.24
+    },
+    {
+      "name": "FRB20190227B",
+      "dm": 331.2289,
+      "snr": 15.9,
+      "repeater": false,
+      "galactic_latitude": 63.817
+    },
+    {
+      "name": "FRB20190122C",
+      "dm": 689.902,
+      "snr": 110.7,
+      "repeater": false,
+      "galactic_latitude": 78.066
+    },
+    {
+      "name": "FRB20190126A",
+      "dm": 350.0017,
+      "snr": 27.8,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20190115A",
+      "dm": 1021.6841,
+      "snr": 12.9,
+      "repeater": false,
+      "galactic_latitude": -3.83
+    },
+    {
+      "name": "FRB20190206C",
+      "dm": 1043.0017,
+      "snr": 20.2,
+      "repeater": false,
+      "galactic_latitude": 42.575
+    },
+    {
+      "name": "FRB20190202B",
+      "dm": 464.906,
+      "snr": 26.6,
+      "repeater": false,
+      "galactic_latitude": 23.197
+    },
+    {
+      "name": "FRB20181203A",
+      "dm": 635.9255,
+      "snr": 29.4,
+      "repeater": false,
+      "galactic_latitude": -35.489
+    },
+    {
+      "name": "FRB20181129C",
+      "dm": 502.2158,
+      "snr": 23.1,
+      "repeater": false,
+      "galactic_latitude": 54.225
+    },
+    {
+      "name": "FRB20190228B",
+      "dm": 1115.2461,
+      "snr": 60.6,
+      "repeater": false,
+      "galactic_latitude": 20.611
+    },
+    {
+      "name": "FRB20190124E",
+      "dm": 617.7899,
+      "snr": 17.4,
+      "repeater": false,
+      "galactic_latitude": -3.09
+    },
+    {
+      "name": "FRB20190204B",
+      "dm": 1464.9393,
+      "snr": 37.1,
+      "repeater": false,
+      "galactic_latitude": 32.726
+    },
+    {
+      "name": "FRB20190128A",
+      "dm": 696.1172,
+      "snr": 16.5,
+      "repeater": false,
+      "galactic_latitude": -37.489
+    },
+    {
+      "name": "FRB20190208B",
+      "dm": 714.2201,
+      "snr": 165.2,
+      "repeater": false,
+      "galactic_latitude": 24.912
+    },
+    {
+      "name": "FRB20190203C",
+      "dm": 370.4618,
+      "snr": 12.5,
+      "repeater": false,
+      "galactic_latitude": 65.168
+    },
+    {
+      "name": "FRB20181213C",
+      "dm": 380.736,
+      "snr": 15.0,
+      "repeater": false,
+      "galactic_latitude": 62.576
+    },
+    {
+      "name": "FRB20181201A",
+      "dm": 694.3563,
+      "snr": 43.6,
+      "repeater": false,
+      "galactic_latitude": 67.973
+    },
+    {
+      "name": "FRB20190301B",
+      "dm": 621.3334,
+      "snr": 14.9,
+      "repeater": false,
+      "galactic_latitude": 17.713
+    },
+    {
+      "name": "FRB20190128C",
+      "dm": 310.6224,
+      "snr": 17.5,
+      "repeater": false,
+      "galactic_latitude": 20.755
+    },
+    {
+      "name": "FRB20190206A",
+      "dm": 188.3364,
+      "snr": 43.5,
+      "repeater": false,
+      "galactic_latitude": 37.945
+    },
+    {
+      "name": "FRB20190130A",
+      "dm": 1367.4607,
+      "snr": 12.6,
+      "repeater": false,
+      "galactic_latitude": -47.845
+    },
+    {
+      "name": "FRB20190210E",
+      "dm": 580.5798,
+      "snr": 15.5,
+      "repeater": false,
+      "galactic_latitude": 25.388
+    },
+    {
+      "name": "FRB20190210B",
+      "dm": 624.1879,
+      "snr": 66.0,
+      "repeater": false,
+      "galactic_latitude": 11.658
+    },
+    {
+      "name": "FRB20181224C",
+      "dm": 596.3248,
+      "snr": 26.9,
+      "repeater": false,
+      "galactic_latitude": 29.405
+    },
+    {
+      "name": "FRB20181202C",
+      "dm": 557.1604,
+      "snr": 19.0,
+      "repeater": false,
+      "galactic_latitude": 10.572
+    },
+    {
+      "name": "FRB20190302A",
+      "dm": 1034.2393,
+      "snr": 48.7,
+      "repeater": false,
+      "galactic_latitude": 0.24
+    },
+    {
+      "name": "FRB20190131B",
+      "dm": 1805.729,
+      "snr": 17.1,
+      "repeater": false,
+      "galactic_latitude": -47.359
+    },
+    {
+      "name": "FRB20190208A",
+      "dm": 579.843,
+      "snr": 31.2,
+      "repeater": true,
+      "galactic_latitude": 19.042
+    },
+    {
+      "name": "FRB20190131D",
+      "dm": 642.1218,
+      "snr": 48.9,
+      "repeater": false,
+      "galactic_latitude": -24.083
+    },
+    {
+      "name": "FRB20190216A",
+      "dm": 1282.3705,
+      "snr": 77.3,
+      "repeater": true,
+      "galactic_latitude": 34.801
+    },
+    {
+      "name": "FRB20190212A",
+      "dm": 301.7837,
+      "snr": 15.7,
+      "repeater": true,
+      "galactic_latitude": 27.802
+    },
+    {
+      "name": "FRB20181225B",
+      "dm": 299.2875,
+      "snr": 27.6,
+      "repeater": false,
+      "galactic_latitude": 25.48
+    },
+    {
+      "name": "FRB20181203B",
+      "dm": 375.3871,
+      "snr": 35.4,
+      "repeater": false,
+      "galactic_latitude": -28.995
+    },
+    {
+      "name": "FRB20190201B",
+      "dm": 749.1764,
+      "snr": 30.8,
+      "repeater": false,
+      "galactic_latitude": 30.613
+    },
+    {
+      "name": "FRB20190212D",
+      "dm": 1139.765,
+      "snr": 18.4,
+      "repeater": false,
+      "galactic_latitude": 49.474
+    },
+    {
+      "name": "FRB20190203B",
+      "dm": 582.2248,
+      "snr": 12.6,
+      "repeater": false,
+      "galactic_latitude": 36.701
+    },
+    {
+      "name": "FRB20190219A",
+      "dm": 657.1942,
+      "snr": 29.8,
+      "repeater": false,
+      "galactic_latitude": 20.171
+    },
+    {
+      "name": "FRB20190224C",
+      "dm": 497.4,
+      "snr": 30.7,
+      "repeater": false,
+      "galactic_latitude": 27.196
+    },
+    {
+      "name": "FRB20181226A",
+      "dm": 349.0107,
+      "snr": 69.0,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20181222D",
+      "dm": 1417.1106,
+      "snr": 20.2,
+      "repeater": false,
+      "galactic_latitude": 60.775
+    },
+    {
+      "name": "FRB20190328C",
+      "dm": 472.8607,
+      "snr": 21.6,
+      "repeater": false,
+      "galactic_latitude": 23.023
+    },
+    {
+      "name": "FRB20190203A",
+      "dm": 420.5727,
+      "snr": 61.9,
+      "repeater": false,
+      "galactic_latitude": 35.484
+    },
+    {
+      "name": "FRB20190214A",
+      "dm": 497.6844,
+      "snr": 16.7,
+      "repeater": false,
+      "galactic_latitude": 22.028
+    },
+    {
+      "name": "FRB20190210C",
+      "dm": 643.3669,
+      "snr": 27.3,
+      "repeater": false,
+      "galactic_latitude": 26.924
+    },
+    {
+      "name": "FRB20190221C",
+      "dm": 2042.3002,
+      "snr": 26.4,
+      "repeater": false,
+      "galactic_latitude": 5.136
+    },
+    {
+      "name": "FRB20190227A",
+      "dm": 394.0388,
+      "snr": 112.0,
+      "repeater": false,
+      "galactic_latitude": 25.293
+    },
+    {
+      "name": "FRB20181229A",
+      "dm": 955.5735,
+      "snr": 31.7,
+      "repeater": false,
+      "galactic_latitude": 42.689
+    },
+    {
+      "name": "FRB20181224A",
+      "dm": 310.2064,
+      "snr": 104.1,
+      "repeater": false,
+      "galactic_latitude": -16.499
+    },
+    {
+      "name": "FRB20190329B",
+      "dm": 406.0539,
+      "snr": 24.5,
+      "repeater": false,
+      "galactic_latitude": 22.857
+    },
+    {
+      "name": "FRB20190210A",
+      "dm": 426.118,
+      "snr": 21.7,
+      "repeater": true,
+      "galactic_latitude": 34.841
+    },
+    {
+      "name": "FRB20190217B",
+      "dm": 846.2117,
+      "snr": 16.7,
+      "repeater": false,
+      "galactic_latitude": -35.12
+    },
+    {
+      "name": "FRB20190211B",
+      "dm": 260.7,
+      "snr": 18.4,
+      "repeater": false,
+      "galactic_latitude": 16.097
+    },
+    {
+      "name": "FRB20190222A",
+      "dm": 460.1693,
+      "snr": 92.4,
+      "repeater": true,
+      "galactic_latitude": 15.882
+    },
+    {
+      "name": "FRB20190301A",
+      "dm": 459.5613,
+      "snr": 53.5,
+      "repeater": true,
+      "galactic_latitude": 15.882
+    },
+    {
+      "name": "FRB20190101B",
+      "dm": 1323.9056,
+      "snr": 22.8,
+      "repeater": false,
+      "galactic_latitude": -5.611
+    },
+    {
+      "name": "FRB20181226B",
+      "dm": 287.0364,
+      "snr": 176.6,
+      "repeater": false,
+      "galactic_latitude": 72.466
+    },
+    {
+      "name": "FRB20190401A",
+      "dm": 783.2162,
+      "snr": 24.8,
+      "repeater": false,
+      "galactic_latitude": 37.192
+    },
+    {
+      "name": "FRB20190212C",
+      "dm": 1016.4498,
+      "snr": 33.2,
+      "repeater": false,
+      "galactic_latitude": 72.017
+    },
+    {
+      "name": "FRB20190218C",
+      "dm": 319.3239,
+      "snr": 155.5,
+      "repeater": false,
+      "galactic_latitude": 36.616
+    },
+    {
+      "name": "FRB20190213A",
+      "dm": 651.06,
+      "snr": 17.5,
+      "repeater": true,
+      "galactic_latitude": -39.38
+    },
+    {
+      "name": "FRB20190304A",
+      "dm": 483.7271,
+      "snr": 48.1,
+      "repeater": false,
+      "galactic_latitude": 31.788
+    },
+    {
+      "name": "FRB20190303B",
+      "dm": 193.507,
+      "snr": 265.8,
+      "repeater": false,
+      "galactic_latitude": 35.063
+    },
+    {
+      "name": "FRB20190107A",
+      "dm": 849.1908,
+      "snr": 15.0,
+      "repeater": false,
+      "galactic_latitude": -39.704
+    },
+    {
+      "name": "FRB20181228B",
+      "dm": 568.6506,
+      "snr": 34.6,
+      "repeater": false,
+      "galactic_latitude": 38.291
+    },
+    {
+      "name": "FRB20190403C",
+      "dm": 935.0094,
+      "snr": 12.2,
+      "repeater": false,
+      "galactic_latitude": 39.914
+    },
+    {
+      "name": "FRB20190213B",
+      "dm": 301.3128,
+      "snr": 23.2,
+      "repeater": true,
+      "galactic_latitude": 27.802
+    },
+    {
+      "name": "FRB20190219B",
+      "dm": 1681.1101,
+      "snr": 42.8,
+      "repeater": false,
+      "galactic_latitude": 41.906
+    },
+    {
+      "name": "FRB20190221D",
+      "dm": 473.7873,
+      "snr": 13.0,
+      "repeater": false,
+      "galactic_latitude": -1.405
+    },
+    {
+      "name": "FRB20190308C",
+      "dm": 500.519,
+      "snr": 39.0,
+      "repeater": false,
+      "galactic_latitude": 72.364
+    },
+    {
+      "name": "FRB20190313A",
+      "dm": 364.4983,
+      "snr": 12.4,
+      "repeater": true,
+      "galactic_latitude": 51.969
+    },
+    {
+      "name": "FRB20190109A",
+      "dm": 324.6041,
+      "snr": 15.4,
+      "repeater": false,
+      "galactic_latitude": 6.881
+    },
+    {
+      "name": "FRB20181230D",
+      "dm": 223.9665,
+      "snr": 20.0,
+      "repeater": false,
+      "galactic_latitude": 37.862
+    },
+    {
+      "name": "FRB20190411B",
+      "dm": 1229.5808,
+      "snr": 17.5,
+      "repeater": false,
+      "galactic_latitude": 55.863
+    },
+    {
+      "name": "FRB20190226B",
+      "dm": 631.6032,
+      "snr": 13.2,
+      "repeater": false,
+      "galactic_latitude": 28.019
+    },
+    {
+      "name": "FRB20190220A",
+      "dm": 216.1205,
+      "snr": 17.6,
+      "repeater": false,
+      "galactic_latitude": 37.762
+    },
+    {
+      "name": "FRB20190224B",
+      "dm": 839.3674,
+      "snr": 16.2,
+      "repeater": false,
+      "galactic_latitude": 28.764
+    },
+    {
+      "name": "FRB20190317A",
+      "dm": 1157.2595,
+      "snr": 9.8,
+      "repeater": false,
+      "galactic_latitude": 8.754
+    },
+    {
+      "name": "FRB20190317E",
+      "dm": 800.88,
+      "snr": 14.9,
+      "repeater": false,
+      "galactic_latitude": 13.438
+    },
+    {
+      "name": "FRB20190111A",
+      "dm": 171.9682,
+      "snr": 131.7,
+      "repeater": false,
+      "galactic_latitude": 68.512
+    },
+    {
+      "name": "FRB20190101A",
+      "dm": 854.6095,
+      "snr": 33.0,
+      "repeater": false,
+      "galactic_latitude": 70.636
+    },
+    {
+      "name": "FRB20190427A",
+      "dm": 455.7828,
+      "snr": 27.5,
+      "repeater": false,
+      "galactic_latitude": -17.219
+    },
+    {
+      "name": "FRB20190301C",
+      "dm": 802.9131,
+      "snr": 13.6,
+      "repeater": false,
+      "galactic_latitude": 70.415
+    },
+    {
+      "name": "FRB20190222C",
+      "dm": 524.0071,
+      "snr": 29.0,
+      "repeater": false,
+      "galactic_latitude": 49.811
+    },
+    {
+      "name": "FRB20190226A",
+      "dm": 601.5727,
+      "snr": 32.4,
+      "repeater": false,
+      "galactic_latitude": -16.488
+    },
+    {
+      "name": "FRB20190318A",
+      "dm": 419.2661,
+      "snr": 32.4,
+      "repeater": false,
+      "galactic_latitude": 16.386
+    },
+    {
+      "name": "FRB20190320D",
+      "dm": 1141.3497,
+      "snr": 16.9,
+      "repeater": false,
+      "galactic_latitude": 33.531
+    },
+    {
+      "name": "FRB20190116B",
+      "dm": 443.5493,
+      "snr": 21.9,
+      "repeater": true,
+      "galactic_latitude": 89.528
+    },
+    {
+      "name": "FRB20190103D",
+      "dm": 1913.5509,
+      "snr": 19.8,
+      "repeater": false,
+      "galactic_latitude": 51.708
+    },
+    {
+      "name": "FRB20190502C",
+      "dm": 396.835,
+      "snr": 28.5,
+      "repeater": false,
+      "galactic_latitude": 32.633
+    },
+    {
+      "name": "FRB20190303A",
+      "dm": 221.6668,
+      "snr": 23.1,
+      "repeater": true,
+      "galactic_latitude": 65.814
+    },
+    {
+      "name": "FRB20190223B",
+      "dm": 536.5143,
+      "snr": 12.5,
+      "repeater": false,
+      "galactic_latitude": 10.756
+    },
+    {
+      "name": "FRB20190228A",
+      "dm": 419.0825,
+      "snr": 109.3,
+      "repeater": false,
+      "galactic_latitude": 80.511
+    },
+    {
+      "name": "FRB20190320C",
+      "dm": 368.7898,
+      "snr": 12.9,
+      "repeater": false,
+      "galactic_latitude": 34.167
+    },
+    {
+      "name": "FRB20190325C",
+      "dm": 797.83,
+      "snr": 12.3,
+      "repeater": false,
+      "galactic_latitude": 3.521
+    },
+    {
+      "name": "FRB20190117C",
+      "dm": 865.9008,
+      "snr": 10.8,
+      "repeater": false,
+      "galactic_latitude": 29.331
+    },
+    {
+      "name": "FRB20190106B",
+      "dm": 316.5941,
+      "snr": 77.2,
+      "repeater": false,
+      "galactic_latitude": -9.344
+    },
+    {
+      "name": "FRB20190518G",
+      "dm": 524.9464,
+      "snr": 33.6,
+      "repeater": false,
+      "galactic_latitude": 24.221
+    },
+    {
+      "name": "FRB20190313B",
+      "dm": 1191.2475,
+      "snr": 14.8,
+      "repeater": false,
+      "galactic_latitude": 25.777
+    },
+    {
+      "name": "FRB20190224D",
+      "dm": 752.9522,
+      "snr": 41.9,
+      "repeater": false,
+      "galactic_latitude": 26.409
+    },
+    {
+      "name": "FRB20190303C",
+      "dm": 1089.6554,
+      "snr": 19.6,
+      "repeater": false,
+      "galactic_latitude": 72.475
+    },
+    {
+      "name": "FRB20190322A",
+      "dm": 1060.1183,
+      "snr": 22.5,
+      "repeater": false,
+      "galactic_latitude": 25.611
+    },
+    {
+      "name": "FRB20190327A",
+      "dm": 346.5748,
+      "snr": 36.4,
+      "repeater": false,
+      "galactic_latitude": 16.064
+    },
+    {
+      "name": "FRB20190118B",
+      "dm": 670.8852,
+      "snr": 16.1,
+      "repeater": false,
+      "galactic_latitude": -33.056
+    },
+    {
+      "name": "FRB20190109B",
+      "dm": 175.1684,
+      "snr": 14.0,
+      "repeater": false,
+      "galactic_latitude": 26.526
+    },
+    {
+      "name": "FRB20190519A",
+      "dm": 348.7128,
+      "snr": 43.4,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20190317F",
+      "dm": 1118.1089,
+      "snr": 82.3,
+      "repeater": false,
+      "galactic_latitude": 50.753
+    },
+    {
+      "name": "FRB20190301D",
+      "dm": 1160.6925,
+      "snr": 16.3,
+      "repeater": false,
+      "galactic_latitude": 27.178
+    },
+    {
+      "name": "FRB20190320E",
+      "dm": 299.135,
+      "snr": 38.8,
+      "repeater": false,
+      "galactic_latitude": 26.755
+    },
+    {
+      "name": "FRB20190330A",
+      "dm": 508.9652,
+      "snr": 10.7,
+      "repeater": false,
+      "galactic_latitude": 75.349
+    },
+    {
+      "name": "FRB20190329A",
+      "dm": 188.6057,
+      "snr": 19.3,
+      "repeater": false,
+      "galactic_latitude": 16.584
+    },
+    {
+      "name": "FRB20190124B",
+      "dm": 441.3838,
+      "snr": 41.1,
+      "repeater": false,
+      "galactic_latitude": 70.673
+    },
+    {
+      "name": "FRB20190110C",
+      "dm": 221.9614,
+      "snr": 28.3,
+      "repeater": false,
+      "galactic_latitude": 43.853
+    },
+    {
+      "name": "FRB20190527A",
+      "dm": 584.5789,
+      "snr": 32.8,
+      "repeater": false,
+      "galactic_latitude": -54.88
+    },
+    {
+      "name": "FRB20190323D",
+      "dm": 763.6519,
+      "snr": 12.2,
+      "repeater": false,
+      "galactic_latitude": -5.966
+    },
+    {
+      "name": "FRB20190304C",
+      "dm": 564.9909,
+      "snr": 15.9,
+      "repeater": false,
+      "galactic_latitude": 63.18
+    },
+    {
+      "name": "FRB20190325B",
+      "dm": 1733.9176,
+      "snr": 11.9,
+      "repeater": false,
+      "galactic_latitude": 81.539
+    },
+    {
+      "name": "FRB20190403D",
+      "dm": 613.4577,
+      "snr": 9.9,
+      "repeater": false,
+      "galactic_latitude": 23.115
+    },
+    {
+      "name": "FRB20190402A",
+      "dm": 1291.69,
+      "snr": 11.5,
+      "repeater": false,
+      "galactic_latitude": 67.105
+    },
+    {
+      "name": "FRB20190111B",
+      "dm": 1336.9271,
+      "snr": 32.6,
+      "repeater": false,
+      "galactic_latitude": 26.266
+    },
+    {
+      "name": "FRB20190605A",
+      "dm": 349.8164,
+      "snr": 55.5,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20190325A",
+      "dm": 359.2893,
+      "snr": 15.6,
+      "repeater": false,
+      "galactic_latitude": 30.154
+    },
+    {
+      "name": "FRB20190317B",
+      "dm": 424.3144,
+      "snr": 11.8,
+      "repeater": false,
+      "galactic_latitude": 19.229
+    },
+    {
+      "name": "FRB20190326A",
+      "dm": 283.3113,
+      "snr": 13.4,
+      "repeater": false,
+      "galactic_latitude": 40.267
+    },
+    {
+      "name": "FRB20190404A",
+      "dm": 1353.9007,
+      "snr": 24.4,
+      "repeater": false,
+      "galactic_latitude": 47.184
+    },
+    {
+      "name": "FRB20190408A",
+      "dm": 863.3796,
+      "snr": 12.9,
+      "repeater": false,
+      "galactic_latitude": 32.126
+    },
+    {
+      "name": "FRB20190209A",
+      "dm": 424.7857,
+      "snr": 19.6,
+      "repeater": true,
+      "galactic_latitude": 34.841
+    },
+    {
+      "name": "FRB20190117A",
+      "dm": 393.3602,
+      "snr": 96.9,
+      "repeater": true,
+      "galactic_latitude": -30.23
+    },
+    {
+      "name": "FRB20190606B",
+      "dm": 277.486,
+      "snr": 39.9,
+      "repeater": false,
+      "galactic_latitude": 27.41
+    },
+    {
+      "name": "FRB20190328B",
+      "dm": 565.0013,
+      "snr": 10.6,
+      "repeater": false,
+      "galactic_latitude": 30.257
+    },
+    {
+      "name": "FRB20190320A",
+      "dm": 614.1463,
+      "snr": 16.0,
+      "repeater": false,
+      "galactic_latitude": 8.303
+    },
+    {
+      "name": "FRB20190328A",
+      "dm": 1303.5755,
+      "snr": 9.1,
+      "repeater": false,
+      "galactic_latitude": 31.913
+    },
+    {
+      "name": "FRB20190409B",
+      "dm": 285.6328,
+      "snr": 20.2,
+      "repeater": false,
+      "galactic_latitude": 34.634
+    },
+    {
+      "name": "FRB20190410A",
+      "dm": 284.0202,
+      "snr": 13.6,
+      "repeater": false,
+      "galactic_latitude": 16.043
+    },
+    {
+      "name": "FRB20190213D",
+      "dm": 1346.8476,
+      "snr": 25.0,
+      "repeater": false,
+      "galactic_latitude": -4.081
+    },
+    {
+      "name": "FRB20190118A",
+      "dm": 225.1079,
+      "snr": 183.4,
+      "repeater": false,
+      "galactic_latitude": 31.422
+    },
+    {
+      "name": "FRB20190614B",
+      "dm": 581.9146,
+      "snr": 54.8,
+      "repeater": false,
+      "galactic_latitude": -25.403
+    },
+    {
+      "name": "FRB20190329C",
+      "dm": 1256.3592,
+      "snr": 27.5,
+      "repeater": false,
+      "galactic_latitude": 22.773
+    },
+    {
+      "name": "FRB20190322B",
+      "dm": 576.9824,
+      "snr": 10.2,
+      "repeater": false,
+      "galactic_latitude": 34.139
+    },
+    {
+      "name": "FRB20190403A",
+      "dm": 518.8344,
+      "snr": 15.2,
+      "repeater": false,
+      "galactic_latitude": 27.919
+    },
+    {
+      "name": "FRB20190415B",
+      "dm": 722.993,
+      "snr": 50.8,
+      "repeater": false,
+      "galactic_latitude": -7.95
+    },
+    {
+      "name": "FRB20190425A",
+      "dm": 128.1577,
+      "snr": 229.9,
+      "repeater": false,
+      "galactic_latitude": 33.021
+    },
+    {
+      "name": "FRB20190218B",
+      "dm": 547.8679,
+      "snr": 19.8,
+      "repeater": false,
+      "galactic_latitude": 20.335
+    },
+    {
+      "name": "FRB20190125A",
+      "dm": 564.7012,
+      "snr": 12.8,
+      "repeater": false,
+      "galactic_latitude": -26.643
+    },
+    {
+      "name": "FRB20190616A",
+      "dm": 212.5867,
+      "snr": 13.4,
+      "repeater": false,
+      "galactic_latitude": 54.134
+    },
+    {
+      "name": "FRB20190403B",
+      "dm": 292.4734,
+      "snr": 26.0,
+      "repeater": false,
+      "galactic_latitude": 29.413
+    },
+    {
+      "name": "FRB20190323C",
+      "dm": 381.1183,
+      "snr": 12.7,
+      "repeater": false,
+      "galactic_latitude": 75.937
+    },
+    {
+      "name": "FRB20190411A",
+      "dm": 460.5552,
+      "snr": 9.8,
+      "repeater": false,
+      "galactic_latitude": 24.62
+    },
+    {
+      "name": "FRB20190416A",
+      "dm": 2287.2653,
+      "snr": 14.8,
+      "repeater": false,
+      "galactic_latitude": 48.533
+    },
+    {
+      "name": "FRB20190501B",
+      "dm": 784.0684,
+      "snr": 29.8,
+      "repeater": false,
+      "galactic_latitude": 34.047
+    },
+    {
+      "name": "FRB20190219C",
+      "dm": 806.688,
+      "snr": 12.4,
+      "repeater": false,
+      "galactic_latitude": -10.907
+    },
+    {
+      "name": "FRB20190127B",
+      "dm": 663.0277,
+      "snr": 18.8,
+      "repeater": false,
+      "galactic_latitude": 31.827
+    },
+    {
+      "name": "FRB20190619D",
+      "dm": 378.4659,
+      "snr": 18.4,
+      "repeater": false,
+      "galactic_latitude": 26.122
+    },
+    {
+      "name": "FRB20190409D",
+      "dm": 1300.1181,
+      "snr": 17.3,
+      "repeater": false,
+      "galactic_latitude": -25.682
+    },
+    {
+      "name": "FRB20190403F",
+      "dm": 664.184,
+      "snr": 16.4,
+      "repeater": false,
+      "galactic_latitude": -23.138
+    },
+    {
+      "name": "FRB20190412B",
+      "dm": 375.7492,
+      "snr": 16.8,
+      "repeater": false,
+      "galactic_latitude": 6.282
+    },
+    {
+      "name": "FRB20190420B",
+      "dm": 846.8432,
+      "snr": 35.5,
+      "repeater": false,
+      "galactic_latitude": 22.707
+    },
+    {
+      "name": "FRB20190502A",
+      "dm": 625.7691,
+      "snr": 75.8,
+      "repeater": false,
+      "galactic_latitude": 52.068
+    },
+    {
+      "name": "FRB20190221A",
+      "dm": 223.8056,
+      "snr": 22.1,
+      "repeater": false,
+      "galactic_latitude": 30.885
+    },
+    {
+      "name": "FRB20190205A",
+      "dm": 695.389,
+      "snr": 18.6,
+      "repeater": false,
+      "galactic_latitude": 21.378
+    },
+    {
+      "name": "FRB20190623C",
+      "dm": 1049.826,
+      "snr": 15.0,
+      "repeater": false,
+      "galactic_latitude": 31.098
+    },
+    {
+      "name": "FRB20190410B",
+      "dm": 642.1699,
+      "snr": 30.8,
+      "repeater": false,
+      "galactic_latitude": 21.832
+    },
+    {
+      "name": "FRB20190404B",
+      "dm": 489.4231,
+      "snr": 175.1,
+      "repeater": false,
+      "galactic_latitude": 34.073
+    },
+    {
+      "name": "FRB20190419B",
+      "dm": 165.0752,
+      "snr": 36.2,
+      "repeater": false,
+      "galactic_latitude": 28.6
+    },
+    {
+      "name": "FRB20190422A",
+      "dm": 452.302,
+      "snr": 29.1,
+      "repeater": false,
+      "galactic_latitude": -19.173
+    },
+    {
+      "name": "FRB20190518D",
+      "dm": 202.4551,
+      "snr": 19.3,
+      "repeater": false,
+      "galactic_latitude": 27.784
+    },
+    {
+      "name": "FRB20190222B",
+      "dm": 497.6194,
+      "snr": 19.9,
+      "repeater": false,
+      "galactic_latitude": 59.624
+    },
+    {
+      "name": "FRB20190206B",
+      "dm": 352.5152,
+      "snr": 17.7,
+      "repeater": false,
+      "galactic_latitude": 18.581
+    },
+    {
+      "name": "FRB20190628B",
+      "dm": 408.0094,
+      "snr": 16.3,
+      "repeater": false,
+      "galactic_latitude": 32.365
+    },
+    {
+      "name": "FRB20190411C",
+      "dm": 233.66,
+      "snr": 50.0,
+      "repeater": false,
+      "galactic_latitude": -42.249
+    },
+    {
+      "name": "FRB20190409A",
+      "dm": 1791.8908,
+      "snr": 19.7,
+      "repeater": false,
+      "galactic_latitude": -17.266
+    },
+    {
+      "name": "FRB20190423D",
+      "dm": 496.4549,
+      "snr": 29.1,
+      "repeater": false,
+      "galactic_latitude": 22.142
+    },
+    {
+      "name": "FRB20190428A",
+      "dm": 969.4001,
+      "snr": 45.7,
+      "repeater": false,
+      "galactic_latitude": 69.653
+    },
+    {
+      "name": "FRB20190527C",
+      "dm": 535.4368,
+      "snr": 80.2,
+      "repeater": false,
+      "galactic_latitude": 21.106
+    },
+    {
+      "name": "FRB20190224E",
+      "dm": 435.8612,
+      "snr": 71.0,
+      "repeater": false,
+      "galactic_latitude": 54.963
+    },
+    {
+      "name": "FRB20190208C",
+      "dm": 238.3921,
+      "snr": 31.4,
+      "repeater": false,
+      "galactic_latitude": 31.031
+    },
+    {
+      "name": "FRB20190630B",
+      "dm": 652.1446,
+      "snr": 93.3,
+      "repeater": false,
+      "galactic_latitude": -8.74
+    },
+    {
+      "name": "FRB20190412A",
+      "dm": 364.7329,
+      "snr": 44.3,
+      "repeater": false,
+      "galactic_latitude": 41.952
+    },
+    {
+      "name": "FRB20190415A",
+      "dm": 633.6812,
+      "snr": 13.0,
+      "repeater": false,
+      "galactic_latitude": 45.458
+    },
+    {
+      "name": "FRB20190424A",
+      "dm": 758.672,
+      "snr": 21.4,
+      "repeater": false,
+      "galactic_latitude": 50.059
+    },
+    {
+      "name": "FRB20190515B",
+      "dm": 822.1887,
+      "snr": 31.1,
+      "repeater": false,
+      "galactic_latitude": -57.329
+    },
+    {
+      "name": "FRB20190531E",
+      "dm": 328.2034,
+      "snr": 14.2,
+      "repeater": false,
+      "galactic_latitude": -62.24
+    },
+    {
+      "name": "FRB20190304B",
+      "dm": 470.0053,
+      "snr": 28.8,
+      "repeater": false,
+      "galactic_latitude": 78.796
+    },
+    {
+      "name": "FRB20190210D",
+      "dm": 359.1477,
+      "snr": 36.0,
+      "repeater": false,
+      "galactic_latitude": 9.371
+    },
+    {
+      "name": "FRB20190419A",
+      "dm": 439.9723,
+      "snr": 10.8,
+      "repeater": false,
+      "galactic_latitude": 25.267
+    },
+    {
+      "name": "FRB20190417B",
+      "dm": 1161.1978,
+      "snr": 17.1,
+      "repeater": false,
+      "galactic_latitude": 50.696
+    },
+    {
+      "name": "FRB20190517D",
+      "dm": 1180.1476,
+      "snr": 12.0,
+      "repeater": false,
+      "galactic_latitude": -14.625
+    },
+    {
+      "name": "FRB20190518A",
+      "dm": 349.6072,
+      "snr": 10.6,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20190605C",
+      "dm": 187.6421,
+      "snr": 47.5,
+      "repeater": false,
+      "galactic_latitude": 49.91
+    },
+    {
+      "name": "FRB20190307A",
+      "dm": 355.3374,
+      "snr": 18.7,
+      "repeater": false,
+      "galactic_latitude": 29.594
+    },
+    {
+      "name": "FRB20190214C",
+      "dm": 533.1118,
+      "snr": 24.4,
+      "repeater": false,
+      "galactic_latitude": 64.928
+    },
+    {
+      "name": "FRB20190425B",
+      "dm": 1031.7236,
+      "snr": 21.6,
+      "repeater": false,
+      "galactic_latitude": 28.464
+    },
+    {
+      "name": "FRB20190420A",
+      "dm": 609.0998,
+      "snr": 25.4,
+      "repeater": false,
+      "galactic_latitude": 24.2
+    },
+    {
+      "name": "FRB20190518E",
+      "dm": 350.1451,
+      "snr": 22.0,
+      "repeater": true,
+      "galactic_latitude": 3.719
+    },
+    {
+      "name": "FRB20190519D",
+      "dm": 539.7712,
+      "snr": 25.3,
+      "repeater": false,
+      "galactic_latitude": 62.15
+    },
+    {
+      "name": "FRB20190606A",
+      "dm": 552.5918,
+      "snr": 18.3,
+      "repeater": true,
+      "galactic_latitude": 57.575
+    },
+    {
+      "name": "FRB20190309A",
+      "dm": 356.9001,
+      "snr": 12.3,
+      "repeater": false,
+      "galactic_latitude": 23.468
+    },
+    {
+      "name": "FRB20190215B",
+      "dm": 274.6295,
+      "snr": 61.9,
+      "repeater": false,
+      "galactic_latitude": -9.778
+    },
+    {
+      "name": "FRB20190426A",
+      "dm": 340.6624,
+      "snr": 37.1,
+      "repeater": false,
+      "galactic_latitude": 29.191
+    },
+    {
+      "name": "FRB20190423B",
+      "dm": 584.9489,
+      "snr": 26.6,
+      "repeater": false,
+      "galactic_latitude": -0.867
+    },
+    {
+      "name": "FRB20190519B",
+      "dm": 349.2801,
+      "snr": 44.8,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20190519H",
+      "dm": 1170.8729,
+      "snr": 57.7,
+      "repeater": false,
+      "galactic_latitude": 24.84
+    },
+    {
+      "name": "FRB20190617C",
+      "dm": 640.1559,
+      "snr": 14.1,
+      "repeater": false,
+      "galactic_latitude": 40.078
+    },
+    {
+      "name": "FRB20190317C",
+      "dm": 598.2628,
+      "snr": 18.1,
+      "repeater": false,
+      "galactic_latitude": 32.433
+    },
+    {
+      "name": "FRB20190217A",
+      "dm": 798.1092,
+      "snr": 20.7,
+      "repeater": false,
+      "galactic_latitude": 12.793
+    },
+    {
+      "name": "FRB20190502B",
+      "dm": 918.6143,
+      "snr": 66.5,
+      "repeater": false,
+      "galactic_latitude": 50.717
+    },
+    {
+      "name": "FRB20190430C",
+      "dm": 400.5606,
+      "snr": 32.2,
+      "repeater": false,
+      "galactic_latitude": 15.75
+    },
+    {
+      "name": "FRB20190527B",
+      "dm": 449.8187,
+      "snr": 10.0,
+      "repeater": true,
+      "galactic_latitude": 12.301
+    },
+    {
+      "name": "FRB20190530A",
+      "dm": 555.4445,
+      "snr": 14.9,
+      "repeater": false,
+      "galactic_latitude": 8.747
+    },
+    {
+      "name": "FRB20190621C",
+      "dm": 570.2672,
+      "snr": 17.5,
+      "repeater": false,
+      "galactic_latitude": 64.501
+    },
+    {
+      "name": "FRB20190322C",
+      "dm": 1192.0806,
+      "snr": 61.9,
+      "repeater": false,
+      "galactic_latitude": 21.204
+    },
+    {
+      "name": "FRB20190218A",
+      "dm": 1285.1286,
+      "snr": 16.6,
+      "repeater": false,
+      "galactic_latitude": 60.035
+    },
+    {
+      "name": "FRB20190515D",
+      "dm": 426.0611,
+      "snr": 35.5,
+      "repeater": false,
+      "galactic_latitude": -33.887
+    },
+    {
+      "name": "FRB20190517B",
+      "dm": 191.7199,
+      "snr": 14.0,
+      "repeater": true,
+      "galactic_latitude": 16.584
+    },
+    {
+      "name": "FRB20190601D",
+      "dm": 668.4748,
+      "snr": 11.5,
+      "repeater": false,
+      "galactic_latitude": 23.581
+    },
+    {
+      "name": "FRB20190601B",
+      "dm": 787.7952,
+      "snr": 62.7,
+      "repeater": false,
+      "galactic_latitude": -38.822
+    },
+    {
+      "name": "FRB20190623A",
+      "dm": 1082.2009,
+      "snr": 11.1,
+      "repeater": false,
+      "galactic_latitude": 21.274
+    },
+    {
+      "name": "FRB20190323B",
+      "dm": 789.5631,
+      "snr": 76.8,
+      "repeater": false,
+      "galactic_latitude": 39.888
+    },
+    {
+      "name": "FRB20190221B",
+      "dm": 393.124,
+      "snr": 15.3,
+      "repeater": false,
+      "galactic_latitude": 9.174
+    },
+    {
+      "name": "FRB20190519G",
+      "dm": 430.0942,
+      "snr": 40.9,
+      "repeater": false,
+      "galactic_latitude": 18.993
+    },
+    {
+      "name": "FRB20190518C",
+      "dm": 444.0795,
+      "snr": 46.4,
+      "repeater": false,
+      "galactic_latitude": 38.104
+    },
+    {
+      "name": "FRB20190604C",
+      "dm": 515.6362,
+      "snr": 61.6,
+      "repeater": false,
+      "galactic_latitude": 5.516
+    },
+    {
+      "name": "FRB20190604E",
+      "dm": 1218.5965,
+      "snr": 19.7,
+      "repeater": false,
+      "galactic_latitude": 52.758
+    },
+    {
+      "name": "FRB20190625E",
+      "dm": 188.5335,
+      "snr": 27.8,
+      "repeater": true,
+      "galactic_latitude": 16.584
+    },
+    {
+      "name": "FRB20190223A",
+      "dm": 389.2365,
+      "snr": 20.5,
+      "repeater": false,
+      "galactic_latitude": 25.662
+    },
+    {
+      "name": "FRB20190330B",
+      "dm": 668.0927,
+      "snr": 51.9,
+      "repeater": false,
+      "galactic_latitude": 29.234
+    },
+    {
+      "name": "FRB20190604A",
+      "dm": 552.4847,
+      "snr": 70.0,
+      "repeater": true,
+      "galactic_latitude": 57.575
+    },
+    {
+      "name": "FRB20190519F",
+      "dm": 797.7663,
+      "snr": 41.0,
+      "repeater": false,
+      "galactic_latitude": 38.289
+    },
+    {
+      "name": "FRB20190605B",
+      "dm": 348.7113,
+      "snr": 87.8,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20190605D",
+      "dm": 1656.5332,
+      "snr": 17.4,
+      "repeater": false,
+      "galactic_latitude": -32.689
+    },
+    {
+      "name": "FRB20190629A",
+      "dm": 503.7787,
+      "snr": 13.2,
+      "repeater": false,
+      "galactic_latitude": -49.702
+    },
+    {
+      "name": "FRB20190403G",
+      "dm": 865.3106,
+      "snr": 15.8,
+      "repeater": false,
+      "galactic_latitude": -5.189
+    },
+    {
+      "name": "FRB20190607B",
+      "dm": 289.376,
+      "snr": 17.5,
+      "repeater": false,
+      "galactic_latitude": -8.984
+    },
+    {
+      "name": "FRB20190519J",
+      "dm": 642.7588,
+      "snr": 18.6,
+      "repeater": false,
+      "galactic_latitude": 26.38
+    },
+    {
+      "name": "FRB20190607A",
+      "dm": 562.4528,
+      "snr": 142.0,
+      "repeater": false,
+      "galactic_latitude": -37.596
+    },
+    {
+      "name": "FRB20190609A",
+      "dm": 316.6434,
+      "snr": 21.0,
+      "repeater": false,
+      "galactic_latitude": 25.298
+    },
+    {
+      "name": "FRB20190630A",
+      "dm": 392.4384,
+      "snr": 31.2,
+      "repeater": true,
+      "galactic_latitude": -30.23
+    },
+    {
+      "name": "FRB20190303D",
+      "dm": 711.1512,
+      "snr": 11.2,
+      "repeater": false,
+      "galactic_latitude": 45.643
+    },
+    {
+      "name": "FRB20190405B",
+      "dm": 1113.218,
+      "snr": 21.4,
+      "repeater": false,
+      "galactic_latitude": 27.735
+    },
+    {
+      "name": "FRB20190614C",
+      "dm": 589.1633,
+      "snr": 9.7,
+      "repeater": false,
+      "galactic_latitude": -25.101
+    },
+    {
+      "name": "FRB20190520A",
+      "dm": 432.5063,
+      "snr": 28.7,
+      "repeater": false,
+      "galactic_latitude": 19.368
+    },
+    {
+      "name": "FRB20190609D",
+      "dm": 511.7144,
+      "snr": 16.2,
+      "repeater": false,
+      "galactic_latitude": 28.859
+    },
+    {
+      "name": "FRB20190612B",
+      "dm": 187.5997,
+      "snr": 25.6,
+      "repeater": false,
+      "galactic_latitude": 53.884
+    },
+    {
+      "name": "FRB20190701E",
+      "dm": 890.4771,
+      "snr": 16.7,
+      "repeater": false,
+      "galactic_latitude": 40.37
+    },
+    {
+      "name": "FRB20190307B",
+      "dm": 294.0006,
+      "snr": 19.9,
+      "repeater": false,
+      "galactic_latitude": 26.612
+    },
+    {
+      "name": "FRB20190406A",
+      "dm": 580.2254,
+      "snr": 16.3,
+      "repeater": true,
+      "galactic_latitude": 19.042
+    },
+    {
+      "name": "FRB20190617A",
+      "dm": 195.7693,
+      "snr": 156.4,
+      "repeater": false,
+      "galactic_latitude": 33.058
+    },
+    {
+      "name": "FRB20190531B",
+      "dm": 167.9597,
+      "snr": 122.4,
+      "repeater": false,
+      "galactic_latitude": 34.89
+    },
+    {
+      "name": "FRB20190614A",
+      "dm": 1064.0389,
+      "snr": 14.7,
+      "repeater": false,
+      "galactic_latitude": 28.754
+    },
+    {
+      "name": "FRB20190624B",
+      "dm": 213.9222,
+      "snr": 80.4,
+      "repeater": false,
+      "galactic_latitude": 20.135
+    },
+    {
+      "name": "FRB20190308B",
+      "dm": 180.18,
+      "snr": 21.8,
+      "repeater": false,
+      "galactic_latitude": 21.35
+    },
+    {
+      "name": "FRB20190414A",
+      "dm": 811.9807,
+      "snr": 14.6,
+      "repeater": false,
+      "galactic_latitude": 74.853
+    },
+    {
+      "name": "FRB20190621A",
+      "dm": 197.3241,
+      "snr": 11.1,
+      "repeater": true,
+      "galactic_latitude": 42.876
+    },
+    {
+      "name": "FRB20190604G",
+      "dm": 233.0453,
+      "snr": 24.8,
+      "repeater": false,
+      "galactic_latitude": 32.148
+    },
+    {
+      "name": "FRB20190617B",
+      "dm": 273.5137,
+      "snr": 16.3,
+      "repeater": false,
+      "galactic_latitude": -39.454
+    },
+    {
+      "name": "FRB20190625C",
+      "dm": 442.2388,
+      "snr": 21.1,
+      "repeater": false,
+      "galactic_latitude": -20.144
+    },
+    {
+      "name": "FRB20190316A",
+      "dm": 515.9273,
+      "snr": 19.0,
+      "repeater": false,
+      "galactic_latitude": -41.792
+    },
+    {
+      "name": "FRB20190416B",
+      "dm": 575.3602,
+      "snr": 29.1,
+      "repeater": false,
+      "galactic_latitude": 70.355
+    },
+    {
+      "name": "FRB20190623B",
+      "dm": 1556.765,
+      "snr": 37.2,
+      "repeater": false,
+      "galactic_latitude": -9.197
+    },
+    {
+      "name": "FRB20190609B",
+      "dm": 292.1875,
+      "snr": 76.5,
+      "repeater": false,
+      "galactic_latitude": 28.7
+    },
+    {
+      "name": "FRB20190619C",
+      "dm": 488.2712,
+      "snr": 11.5,
+      "repeater": false,
+      "galactic_latitude": -22.171
+    },
+    {
+      "name": "FRB20190701C",
+      "dm": 974.1947,
+      "snr": 16.8,
+      "repeater": false,
+      "galactic_latitude": 25.878
+    },
+    {
+      "name": "FRB20190319A",
+      "dm": 2039.9361,
+      "snr": 23.7,
+      "repeater": false,
+      "galactic_latitude": 11.999
+    },
+    {
+      "name": "FRB20190417C",
+      "dm": 320.2319,
+      "snr": 95.1,
+      "repeater": false,
+      "galactic_latitude": 11.042
+    },
+    {
+      "name": "FRB20190627D",
+      "dm": 2002.2419,
+      "snr": 15.0,
+      "repeater": false,
+      "galactic_latitude": 10.208
+    },
+    {
+      "name": "FRB20190612A",
+      "dm": 432.2911,
+      "snr": 22.2,
+      "repeater": false,
+      "galactic_latitude": 39.913
+    },
+    {
+      "name": "FRB20190621B",
+      "dm": 1061.2339,
+      "snr": 9.9,
+      "repeater": false,
+      "galactic_latitude": 61.488
+    },
+    {
+      "name": "FRB20190320B",
+      "dm": 489.4949,
+      "snr": 20.1,
+      "repeater": false,
+      "galactic_latitude": 41.202
+    },
+    {
+      "name": "FRB20190421A",
+      "dm": 223.6407,
+      "snr": 23.2,
+      "repeater": true,
+      "galactic_latitude": 65.814
+    },
+    {
+      "name": "FRB20190628C",
+      "dm": 1748.442,
+      "snr": 13.7,
+      "repeater": false,
+      "galactic_latitude": -14.272
+    },
+    {
+      "name": "FRB20190618A",
+      "dm": 228.9469,
+      "snr": 52.5,
+      "repeater": false,
+      "galactic_latitude": -17.652
+    },
+    {
+      "name": "FRB20190622A",
+      "dm": 1122.8176,
+      "snr": 13.7,
+      "repeater": false,
+      "galactic_latitude": 25.894
+    },
+    {
+      "name": "FRB20190323A",
+      "dm": 857.5038,
+      "snr": 14.4,
+      "repeater": false,
+      "galactic_latitude": 22.288
+    },
+    {
+      "name": "FRB20190422B",
+      "dm": 977.3855,
+      "snr": 10.1,
+      "repeater": false,
+      "galactic_latitude": 56.947
+    },
+    {
+      "name": "FRB20190630C",
+      "dm": 1660.3475,
+      "snr": 14.2,
+      "repeater": false,
+      "galactic_latitude": 21.781
+    },
+    {
+      "name": "FRB20190624A",
+      "dm": 973.8473,
+      "snr": 19.2,
+      "repeater": false,
+      "galactic_latitude": 45.048
+    },
+    {
+      "name": "FRB20190625D",
+      "dm": 717.8831,
+      "snr": 66.9,
+      "repeater": false,
+      "galactic_latitude": 13.033
+    },
+    {
+      "name": "FRB20190403E",
+      "dm": 226.1984,
+      "snr": 57.0,
+      "repeater": false,
+      "galactic_latitude": 30.189
+    },
+    {
+      "name": "FRB20190423C",
+      "dm": 855.5273,
+      "snr": 20.4,
+      "repeater": false,
+      "galactic_latitude": 24.349
+    },
+    {
+      "name": "FRB20190627B",
+      "dm": 430.3224,
+      "snr": 68.4,
+      "repeater": false,
+      "galactic_latitude": 36.735
+    },
+    {
+      "name": "FRB20190628A",
+      "dm": 745.8432,
+      "snr": 14.4,
+      "repeater": false,
+      "galactic_latitude": 64.939
+    },
+    {
+      "name": "FRB20190405A",
+      "dm": 424.8837,
+      "snr": 10.9,
+      "repeater": false,
+      "galactic_latitude": -30.706
+    },
+    {
+      "name": "FRB20190429B",
+      "dm": 295.6516,
+      "snr": 18.2,
+      "repeater": false,
+      "galactic_latitude": -38.214
+    },
+    {
+      "name": "FRB20190630D",
+      "dm": 323.5174,
+      "snr": 19.7,
+      "repeater": false,
+      "galactic_latitude": 39.911
+    },
+    {
+      "name": "FRB20190701D",
+      "dm": 933.3629,
+      "snr": 44.8,
+      "repeater": false,
+      "galactic_latitude": 28.381
+    },
+    {
+      "name": "FRB20190409C",
+      "dm": 674.6311,
+      "snr": 12.1,
+      "repeater": false,
+      "galactic_latitude": 35.039
+    },
+    {
+      "name": "FRB20190430B",
+      "dm": 2619.3991,
+      "snr": 12.6,
+      "repeater": false,
+      "galactic_latitude": 44.199
+    },
+    {
+      "name": "FRB20190414B",
+      "dm": 506.4888,
+      "snr": 13.7,
+      "repeater": false,
+      "galactic_latitude": 41.703
+    },
+    {
+      "name": "FRB20190515A",
+      "dm": 450.5029,
+      "snr": 39.3,
+      "repeater": false,
+      "galactic_latitude": 8.294
+    },
+    {
+      "name": "FRB20190415C",
+      "dm": 650.1818,
+      "snr": 7.9,
+      "repeater": false,
+      "galactic_latitude": -4.785
+    },
+    {
+      "name": "FRB20190516B",
+      "dm": 1235.4156,
+      "snr": 19.4,
+      "repeater": false,
+      "galactic_latitude": 58.762
+    },
+    {
+      "name": "FRB20190417A",
+      "dm": 1380.0807,
+      "snr": 26.2,
+      "repeater": true,
+      "galactic_latitude": 17.359
+    },
+    {
+      "name": "FRB20190517C",
+      "dm": 335.5746,
+      "snr": 58.3,
+      "repeater": false,
+      "galactic_latitude": -0.369
+    },
+    {
+      "name": "FRB20190418A",
+      "dm": 184.5069,
+      "snr": 26.7,
+      "repeater": false,
+      "galactic_latitude": -22.929
+    },
+    {
+      "name": "FRB20190518B",
+      "dm": 913.7722,
+      "snr": 16.7,
+      "repeater": false,
+      "galactic_latitude": 72.388
+    },
+    {
+      "name": "FRB20190420C",
+      "dm": 629.954,
+      "snr": 13.2,
+      "repeater": false,
+      "galactic_latitude": 42.836
+    },
+    {
+      "name": "FRB20190519C",
+      "dm": 349.0643,
+      "snr": 27.1,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20190421B",
+      "dm": 392.2475,
+      "snr": 79.6,
+      "repeater": false,
+      "galactic_latitude": 15.059
+    },
+    {
+      "name": "FRB20190531C",
+      "dm": 478.202,
+      "snr": 12.2,
+      "repeater": false,
+      "galactic_latitude": -10.07
+    },
+    {
+      "name": "FRB20190423A",
+      "dm": 242.6456,
+      "snr": 458.5,
+      "repeater": false,
+      "galactic_latitude": 60.295
+    },
+    {
+      "name": "FRB20190601A",
+      "dm": 2227.8913,
+      "snr": 16.4,
+      "repeater": false,
+      "galactic_latitude": 54.362
+    },
+    {
+      "name": "FRB20190429A",
+      "dm": 470.8839,
+      "snr": 11.2,
+      "repeater": false,
+      "galactic_latitude": 23.988
+    },
+    {
+      "name": "FRB20190603B",
+      "dm": 504.3168,
+      "snr": 12.7,
+      "repeater": false,
+      "galactic_latitude": 14.115
+    },
+    {
+      "name": "FRB20190430A",
+      "dm": 339.2516,
+      "snr": 14.8,
+      "repeater": false,
+      "galactic_latitude": 25.825
+    },
+    {
+      "name": "FRB20190604F",
+      "dm": 348.7248,
+      "snr": 98.8,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20190515C",
+      "dm": 652.3925,
+      "snr": 20.9,
+      "repeater": true,
+      "galactic_latitude": -39.38
+    },
+    {
+      "name": "FRB20190609C",
+      "dm": 480.2819,
+      "snr": 17.1,
+      "repeater": false,
+      "galactic_latitude": -12.51
+    },
+    {
+      "name": "FRB20190519E",
+      "dm": 693.8297,
+      "snr": 30.3,
+      "repeater": false,
+      "galactic_latitude": 65.202
+    },
+    {
+      "name": "FRB20190613A",
+      "dm": 714.9767,
+      "snr": 14.1,
+      "repeater": false,
+      "galactic_latitude": 30.623
+    },
+    {
+      "name": "FRB20190529A",
+      "dm": 704.4498,
+      "snr": 8.3,
+      "repeater": false,
+      "galactic_latitude": -5.291
+    },
+    {
+      "name": "FRB20190619A",
+      "dm": 899.9116,
+      "snr": 15.9,
+      "repeater": false,
+      "galactic_latitude": 45.593
+    },
+    {
+      "name": "FRB20190531A",
+      "dm": 324.6981,
+      "snr": 14.4,
+      "repeater": false,
+      "galactic_latitude": 35.24
+    },
+    {
+      "name": "FRB20190625A",
+      "dm": 302.1356,
+      "snr": 38.7,
+      "repeater": false,
+      "galactic_latitude": 59.251
+    },
+    {
+      "name": "FRB20190601C",
+      "dm": 424.0656,
+      "snr": 47.9,
+      "repeater": false,
+      "galactic_latitude": 1.352
+    },
+    {
+      "name": "FRB20190627C",
+      "dm": 968.6127,
+      "snr": 57.0,
+      "repeater": false,
+      "galactic_latitude": 30.352
+    },
+    {
+      "name": "FRB20190603A",
+      "dm": 349.5812,
+      "snr": 10.5,
+      "repeater": true,
+      "galactic_latitude": 3.728
+    },
+    {
+      "name": "FRB20190701A",
+      "dm": 637.0934,
+      "snr": 14.6,
+      "repeater": false,
+      "galactic_latitude": 25.723
+    },
+    {
+      "name": "FRB20190604D",
+      "dm": 1021.1687,
+      "snr": 15.0,
+      "repeater": false,
+      "galactic_latitude": 76.846
+    },
+    {
+      "name": "FRB20190608A",
+      "dm": 722.1756,
+      "snr": 14.4,
+      "repeater": false,
+      "galactic_latitude": -41.854
+    },
+    {
+      "name": "FRB20190611A",
+      "dm": 190.4487,
+      "snr": 26.2,
+      "repeater": true,
+      "galactic_latitude": 16.584
+    },
+    {
+      "name": "FRB20190612C",
+      "dm": 1641.5697,
+      "snr": 36.2,
+      "repeater": false,
+      "galactic_latitude": 13.015
+    },
+    {
+      "name": "FRB20190613B",
+      "dm": 285.1379,
+      "snr": 44.5,
+      "repeater": false,
+      "galactic_latitude": -4.92
+    },
+    {
+      "name": "FRB20190619B",
+      "dm": 270.5868,
+      "snr": 19.0,
+      "repeater": false,
+      "galactic_latitude": 33.116
+    },
+    {
+      "name": "FRB20190621D",
+      "dm": 647.5144,
+      "snr": 20.0,
+      "repeater": false,
+      "galactic_latitude": 28.932
+    },
+    {
+      "name": "FRB20190627A",
+      "dm": 404.2213,
+      "snr": 14.7,
+      "repeater": false,
+      "galactic_latitude": 63.462
+    },
+    {
+      "name": "FRB20190701B",
+      "dm": 749.1142,
+      "snr": 17.5,
+      "repeater": false,
+      "galactic_latitude": 23.404
+    }
+  ],
+  "sightline": {
+    "observed_dm": 349.3490751229,
+    "ne2001": {
+      "milky_way_disk": 198.93185424804688,
+      "excess_after_disk": 150.41722087485311
+    },
+    "ymw16": {
+      "milky_way_disk": 324.8529968261719,
+      "excess_after_disk": 24.496078296728115
+    },
+    "illustrative_halo_range": [
+      30,
+      80
+    ],
+    "low_z_cosmic_mean_900z": 30.330000000000002,
+    "warning": "NE2001 and YMW16 produce very different foreground estimates at Galactic latitude +3.73 degrees. A unique host or IGM DM is not inferred."
+  },
+  "provenance": {
+    "catalog_url": "https://raw.githubusercontent.com/FRBs/FRB/main/frb/data/FRBs/CHIME_catalog-2021-1-27.json",
+    "source_sha256": "d7d375db9a5e2e2503307b733828a5cdd32cd26ded716486905413b6b97fd650",
+    "retrieved_utc": "2026-10-05",
+    "host_source": "Marcote et al. 2020, Nature 577, 190-194, doi:10.1038/s41586-019-1866-z"
+  },
+  "scope": {
+    "measured": [
+      "total DM",
+      "DM uncertainty",
+      "sky position",
+      "burst S/N and profile quantities"
+    ],
+    "derived": [
+      "cold-plasma delay curve",
+      "catalog percentile",
+      "two catalogued Galactic-model foregrounds"
+    ],
+    "not_inferred": [
+      "unique IGM column",
+      "unique host contribution",
+      "DM-only redshift",
+      "progenitor mechanism"
+    ]
+  }
+}

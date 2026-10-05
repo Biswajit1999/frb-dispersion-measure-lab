@@ -1,157 +1,39 @@
-# FRB Cosmic Baryon Lab
+# Six Seconds Through the Cosmic Web
 
-![FRB Cosmic Baryon Lab scientific interface](assets/social-preview.svg)
+An evidence-led study of **FRB 20180916B** using all **535 one-event records** in the public CHIME/FRB Catalog 1 JSON. The interface replaces free-form sliders with three research readings: the measured cold-plasma sweep, the burst’s position in the survey distribution, and the disagreement between Galactic electron models.
 
-Cold-plasma sweep, dynamic spectra and host/IGM DM decomposition.
+## Results
 
-Created and maintained by Biswajit Jana.
+- Catalogued DM: **349.349 ± 0.006 pc cm⁻³**
+- Predicted 400-to-800 MHz cold-plasma delay: **6.79398 s**
+- Pulse width in this catalog record: **0.765 ms**
+- Catalog percentile: **24.3%** (535-event JSON; median DM 533.1 pc cm⁻³)
+- Excess after NE2001 Galactic-disk subtraction: **150.4 pc cm⁻³**
+- Excess after YMW16 Galactic-disk subtraction: **24.5 pc cm⁻³**
 
-## Scientific Purpose
+The 126 pc cm⁻³ foreground-model spread is the main result of the sightline audit. At Galactic latitude +3.73°, total DM cannot be cleanly divided into Milky Way, halo, IGM and host terms without additional assumptions. The localized host redshift, z = 0.0337 ± 0.0002, supplies distance independently; DM alone does not.
 
-This zero-build browser laboratory puts a compact reference-data bundle in front of the simulation. The app loads `data/reference.json`, renders those published anchors first, then sends the adjustable model to `physicsWorker.js` so numerical work stays off the UI thread.
-
-## Scientific Background
-
-### Fast radio bursts
-
-Fast radio bursts (FRBs) are millisecond-duration pulses of radio emission, first identified by Lorimer et al. (2007) in archival Parkes pulsar-survey data. Individual bursts release roughly the energy the Sun radiates over days to years, in a flash lasting only a few milliseconds, and the overwhelming majority of well-localized sources are extragalactic. Their physical origin is still debated; magnetars are the leading progenitor candidate for at least some FRBs, but the population is likely not fully explained by a single mechanism. Wide-field radio instruments such as CHIME (Canada) and ASKAP (Australia) now detect FRBs at a rate of many per day, building up large catalogues of burst arrival times, fluences and, crucially, dispersion measures.
-
-### Cold-plasma dispersion
-
-Radio waves traveling through an ionized medium (the interstellar medium of our Galaxy, the intergalactic medium, and the host galaxy of the burst) are dispersed: lower-frequency photons are delayed relative to higher-frequency photons because the group velocity of light in a cold, tenuous plasma depends on frequency. For a plasma of free-electron density `n_e`, the group delay between two observing frequencies `nu_lo` and `nu_hi` (in the standard low-frequency, non-relativistic-plasma approximation) is
-
-```
-t(nu) - t(nu_ref) = k_DM * DM * (nu^-2 - nu_ref^-2)
-```
-
-where `k_DM ≈ 4.148808e3 MHz^2 pc^-1 cm^3 s` is the standard dispersion constant, and DM is the dispersion measure — the electron column density integrated along the line of sight:
-
-```
-DM = ∫ n_e dl   [pc cm^-3]
-```
-
-The characteristic `nu^-2` scaling is the observational fingerprint that lets a real burst be distinguished from radio-frequency interference: a genuine astrophysical pulse sweeps from high to low frequency following exactly this power law, and DM is measured by fitting that sweep.
-
-### DM as a probe of the intergalactic medium
-
-Because DM adds along the whole line of sight, it is a sum of contributions from the Milky Way's interstellar medium, the host galaxy's interstellar medium (divided by `1+z` for cosmological redshifting), and the intergalactic medium (IGM) the burst crosses on its way to us:
-
-```
-DM_obs = DM_MW + DM_host / (1 + z) + DM_IGM(z)
-```
-
-Because most of the baryons in the universe are believed to reside in the diffuse, highly ionized IGM (rather than in stars or galaxies), `DM_IGM` grows statistically with redshift and can be used as a census of otherwise-invisible baryonic matter — the "missing baryons" problem. Macquart et al. (2020) established this DM–redshift relation observationally using a sample of localized FRBs with independently measured host-galaxy redshifts, showing that the mean `DM_IGM(z)` tracks the cosmic baryon density as expected from cosmological simulations, turning FRBs into practical tools for IGM cosmography.
-
-### Surveys
-
-CHIME (a stationary radio telescope in British Columbia operating at 400-800 MHz) and ASKAP (a phased-array-feed interferometer in Western Australia) are the two instruments currently producing the bulk of new, well-characterized FRB detections, including the localizations that make DM-redshift studies possible.
-
-## How It Works
-
-This is a client-side, zero-build simulation lab: everything runs in the browser with no server-side compute.
-
-1. `app.js` defines the measured total DM and an explicit line-of-sight budget: Milky Way disk, Milky Way halo, rest-frame host-galaxy contribution, and residual IGM contribution. The host term is divided by `1 + z` before subtraction.
-2. Whenever a control changes, `app.js` posts the current parameters to `physicsWorker.js`, a dedicated Web Worker, so the numerical model runs off the main UI thread and the interface stays responsive.
-3. Inside the worker, `frb(p)` evaluates the cold-plasma law across a 500-point sweep from 350–1800 MHz. It reports the extragalactic DM, redshift-corrected host term, residual IGM column, a low-redshift Macquart estimate, and the difference from the known host redshift.
-4. The worker posts the resulting series, metrics and heatmap back to the main thread, where `app.js` renders the dispersion curve against the published reference anchors on a Canvas plot, colors the heatmap panel, and updates the telemetry readout.
-
-Note: `physicsWorker.js` is a shared worker module that also implements simulation kernels for several other unrelated labs (CMB spectrum, supernova cosmology, microlensing, galaxy rotation curves, asteroseismology, weak lensing, spectrograph precision, clustering, exoplanet atmospheres). Only the `frb` function is used by this app; the rest of the file is inert here and is inherited from a shared multi-lab worker template.
-
-## Usage
+## Reproduce
 
 ```bash
-python -m http.server 8080
-```
-
-Open `http://localhost:8080` and adjust the total DM and foreground/host assumptions. The dispersion curve and dynamic-spectrum schematic update live; the fixed markers use the measured `DM = 349.349 pc cm^-3` of FRB 20180916B.
-
-## Validate
-
-```bash
+python -m pip install -r requirements-research.txt
+python scripts/derive_chime_catalog.py
 npm run check
-```
-
-The validation script (`scripts/validate.js`) checks required files, JSON reference data, worker syntax, citations and absence of unfinished scaffold tokens.
-
-```bash
 npm run validate:research
 ```
 
+`data/chime-catalog-1.json` is preserved as downloaded. The derivation script writes the compact browser payload, distribution bins, event records, ν⁻² curve and foreground comparison to `data/frb20180916b-analysis.json`.
 
-## Architecture
+## Provenance
 
-- `index.html`: mission-control interface.
-- `styles.css`: responsive editorial interface with day/night themes.
-- `app.js`: UI state, Canvas rendering and worker orchestration.
-- `physicsWorker.js`: numerical model and heatmap generation.
-- `data/reference.json`: small auditable reference-data bundle (published DM anchors).
-- `data/research-reference.json`: benchmark anchors used by the repository-quality validator.
-- `scripts/validate.js`: no-dependency repository validation.
-- `scripts/validate_repository.mjs`: research-quality/reference-anchor validator.
+- CHIME/FRB Collaboration et al. (2021), *The First CHIME/FRB Fast Radio Burst Catalog*, ApJS 257, 59, [doi:10.3847/1538-4365/ac33ab](https://doi.org/10.3847/1538-4365/ac33ab).
+- Marcote et al. (2020), *A repeating fast radio burst source localized to a nearby spiral galaxy*, Nature 577, 190–194, [doi:10.1038/s41586-019-1866-z](https://doi.org/10.1038/s41586-019-1866-z).
+- CHIME/FRB Collaboration (2020), *Periodic activity from a fast radio burst source*, Nature 582, 351–355.
 
-## Reference Data
+The JSON representation has 535 records because it stores one entry per event; the catalog paper describes 536 bursts/components and 62 bursts from 18 previously reported repeating sources. The difference is documented in the CHIME open-data ecosystem as multi-component handling rather than silently ignored.
 
-Small browser bundle derived from the catalogued FRB 20180916B dispersion measure, giving predicted delays at four frequencies relative to a 1600 MHz reference. These are reproducible law-check anchors, not four independent observations.
+## Scope
 
-## Math Appendix
+Measured: total DM, reported uncertainty, sky position and profile quantities. Derived: exact cold-plasma delay, survey percentile and the two catalogued Galactic-model excesses. Not inferred: a unique IGM column, unique host contribution, DM-only redshift, or progenitor mechanism.
 
-Dispersion delay between two frequencies:
-
-```
-Δt = k_DM * DM * (ν_lo^-2 - ν_hi^-2)
-k_DM = 4.148808e3   MHz^2 pc^-1 cm^3 s
-```
-
-Total observed dispersion measure as a sum of Galactic, host and intergalactic contributions:
-
-```
-DM_obs = DM_MW + DM_host / (1 + z) + DM_IGM(z)
-```
-
-Dispersion measure as an electron-density line integral:
-
-```
-DM = ∫ n_e dl      [pc cm^-3]
-```
-
-## References
-
-- Lorimer, D.R. et al., 2007. A bright millisecond radio burst of extragalactic origin. Science, 318(5851), pp.777-780.
-- Petroff, E., Hessels, J.W.T. and Lorimer, D.R., 2019. Fast radio bursts. Astronomy and Astrophysics Review, 27(1), p.4.
-- Macquart, J.-P. et al., 2020. A census of baryons in the Universe from localized fast radio bursts. Nature, 581, pp.391-395.
-- CHIME/FRB Collaboration, Amiri, M. et al., 2021. The First CHIME/FRB Fast Radio Burst Catalog. The Astrophysical Journal Supplement Series, 257(2), p.59.
-- CHIME/FRB Collaboration, 2020. Periodic activity from a fast radio burst source. Nature, 582, pp.351-355.
-
-## Reference Data: A Real CHIME/FRB Event
-
-The reference anchors are no longer generic illustrative points -- they are the arrival-delay
-curve computed from the **actual measured dispersion measure** of **FRB 20180916B**, the first
-periodically-repeating fast radio burst (16.35-day activity cycle, CHIME/FRB Collaboration 2020),
-pulled directly from the public CHIME/FRB catalog (`FRBs/FRB` GitHub repository,
-`CHIME_catalog-2021-1-27.json`): `fitburst_dm = 349.349 +/- 0.006 pc/cm^3`. For scale, the full
-535-burst CHIME catalog spans `DM = 103.4` to `3038.1 pc/cm^3` with a median of `533.1 pc/cm^3`.
-The default `dm` slider value now matches this real burst so the model curve and reference
-anchors agree at their default settings.
-
-## What the DM Actually Tells Us -- and Where That Breaks Down
-
-`macquart_implied_z` converts the residual IGM DM into a rough cosmological redshift via the
-Macquart relation (Macquart et al., 2020, *Nature*, 581, pp.391-395): `DM_cosmic(z)` grows
-roughly linearly with `z` at low redshift for standard flat-LCDM cosmology, with a slope of
-about `900 pc/cm^3` per unit `z`.
-
-At the default measured `DM = 349.349 pc/cm^3`, the lab starts from adjustable assumptions of
-`DM_MW,disk = 199`, `DM_MW,halo = 50`, and `DM_host,rest = 50 pc/cm^3`. **These defaults are
-teaching assumptions, not fitted measurements.** The known spectroscopic host redshift is
-`z = 0.0337` (Marcote et al. 2020). The remaining mismatch demonstrates why one DM is not a
-precision distance measurement:
-
-- FRB 20180916B sits at low Galactic latitude, where a real analysis evaluates NE2001 or YMW16
-  along the exact line of sight rather than treating the foreground as a fitted constant.
-- Its actively star-forming host can contribute a substantial, uncertain fraction of the total.
-
-This is exactly why FRB 20180916B, once its host galaxy was VLBI-localised and spectroscopically
-confirmed, became an important **calibration point** for the Macquart relation rather than just
-another data point predicted by it -- real DM-based redshift estimates require either a
-localised host (removing the need to guess) or a statistical ensemble of many bursts to average
-out line-of-sight scatter in the Milky Way and host contributions.
+Biswajit Jana, 2026. MIT License.

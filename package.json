@@ -1,10 +1,10 @@
 {
   "name": "frb-dispersion-measure-lab",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Cold-plasma sweep, dynamic spectra and host/IGM DM decomposition.",
+  "description": "A 535-event CHIME catalog study of FRB 20180916B, its dispersion sweep and foreground uncertainty.",
   "scripts": {
-    "check": "node --check app.js && node --check physicsWorker.js && node --check scripts/validate.js && node scripts/validate.js",
+    "check": "node --check app.js && node --check scripts/validate.js && node scripts/validate.js",
     "validate:research": "node scripts/validate_repository.mjs"
   },
   "keywords": [

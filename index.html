@@ -1,75 +1,11 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Cold-plasma sweep, dynamic spectra and host/IGM DM decomposition.">
-  <meta property="og:image" content="https://biswajit1999.github.io/frb-dispersion-measure-lab/assets/social-preview.svg">
-  <title>FRB Cosmic Baryon Lab</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#lab">Skip to the laboratory</a>
-  <main class="shell">
-    <header class="topbar">
-      <div>
-        <p class="eyebrow">Radio transient · galaxy baryon laboratory</p>
-        <h1>FRB Cosmic Baryon Lab</h1>
-      </div>
-      <div class="top-actions"><div class="status-card"><span id="workerStatus">Worker booting</span><strong id="frameRate">-- fps</strong></div><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch colour theme" aria-pressed="false">Light</button></div>
-    </header>
-
-    <section class="research-intro" aria-labelledby="research-question">
-      <div><p class="eyebrow">From pulse sweep to galaxy environment</p><h2 id="research-question">Which electrons delayed FRB 20180916B?</h2><p class="lede">The observed dispersion measure is a line-of-sight inventory: Milky Way disk, Galactic halo, intergalactic medium, host galaxy and the burst environment. Explore that budget while the exact cold-plasma law renders the 350–1800 MHz arrival-time sweep.</p><div class="intro-links"><a href="#lab">Open the baryon budget</a><a href="https://chime-frb-open-data.github.io/catalog/" target="_blank" rel="noopener">CHIME/FRB open data</a></div></div>
-      <dl class="evidence-strip"><div><dt>Observed DM</dt><dd>349.349 pc cm⁻³</dd></div><div><dt>Host redshift</dt><dd>0.0337</dd></div><div><dt>Host</dt><dd>Nearby spiral galaxy</dd></div><div><dt>Reference band</dt><dd>400–800 MHz</dd></div></dl>
-    </section>
-    <section class="method-strip" aria-label="Dispersion-measure budget"><article><span>01</span><h3>Milky Way</h3><p>Separate disk and halo assumptions instead of hiding them inside one subtraction.</p></article><article><span>02</span><h3>Cosmic web</h3><p>Translate the residual electron column into a low-redshift Macquart-relation estimate.</p></article><article><span>03</span><h3>Host galaxy</h3><p>Apply the required 1/(1+z) correction to the host-frame DM contribution.</p></article></section>
-
-    <section class="grid" id="lab" aria-label="Interactive FRB dispersion laboratory">
-      <aside class="panel controls">
-        <div class="panel-title">
-          <span>Controls</span>
-          <b id="referenceLabel">Reference loading</b>
-        </div>
-        <div id="controls"></div>
-        <button id="reset">Reset model</button>
-      </aside>
-
-      <section class="panel plot-panel">
-        <div class="panel-title">
-          <span>Reference Data + Simulation</span>
-          <b id="seriesLabel">Frequency [MHz]</b>
-        </div>
-        <canvas id="seriesCanvas" width="1200" height="620"></canvas>
-      </section>
-
-      <section class="panel heat-panel">
-        <div class="panel-title">
-          <span>Parameter Response Field</span>
-          <b>worker heatmap</b>
-        </div>
-        <canvas id="heatCanvas" width="620" height="620"></canvas>
-      </section>
-
-      <section class="panel telemetry">
-        <div class="panel-title">
-          <span>Telemetry</span>
-          <b id="runId">run --</b>
-        </div>
-        <div id="metrics" class="metrics"></div>
-        <pre id="notes"></pre>
-      </section>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <span>&copy; 2026 Biswajit Jana</span>
-    <nav>
-      <a href="https://biswajit1999.github.io/Biswajit_Jana.github.io/" target="_blank" rel="noopener">Portfolio</a>
-      <a href="https://github.com/Biswajit1999" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/biswajit-jana-27011a151/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://orcid.org/0009-0002-2411-1891" target="_blank" rel="noopener">ORCID</a>
-    </nav>
-  </footer>
-  <script src="theme.js"></script><script src="app.js"></script>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Trace one real fast radio burst from its six-second frequency sweep to its host galaxy and uncertain electron-column budget."><meta property="og:image" content="https://biswajit1999.github.io/frb-dispersion-measure-lab/assets/social-preview.svg"><title>Six Seconds Through the Cosmic Web | FRB 20180916B</title><link rel="stylesheet" href="styles.css"></head>
+<body><a class="skip" href="#evidence">Skip to evidence</a><header><a class="brand" href="#top">FRB / 180916</a><nav><a href="#decode">Decode</a><a href="#evidence">Evidence</a><a href="#boundary">Boundary</a></nav><button id="themeToggle" type="button" aria-label="Switch colour theme">Dark</button></header>
+<main id="top">
+<section class="hero"><div><p class="label">REAL CHIME/FRB CATALOG DATA · 400–800 MHz</p><h1>Six seconds<br><span>through the</span><br>cosmic web.</h1><p class="intro">A millisecond radio flash reached CHIME’s high-frequency channels first. Its lower frequencies arrived <b>6.79 seconds later</b>. That delay measures every free electron between a nearby spiral galaxy and Earth—but not where each electron lives.</p><a class="cta" href="#evidence">Follow the signal ↓</a></div><div class="sweep-art" aria-label="Illustration of a dispersed radio pulse arriving from high to low frequency"><div class="antenna"></div><canvas id="heroSweep" width="700" height="700"></canvas><span>800 MHz / early</span><span>400 MHz / late</span></div></section>
+<section class="facts" aria-label="Measured facts"><div><b id="dmFact">—</b><span>pc cm⁻³ total DM</span></div><div><b id="snrFact">—</b><span>catalogue S/N</span></div><div><b>z = 0.0337</b><span>host redshift</span></div><div><b>16.35 d</b><span>activity period</span></div></section>
+<section class="decode" id="decode"><p class="section-id">01 · DECODE THE MEASUREMENT</p><div><h2>Dispersion measure is an electron count along a line—not a distance meter.</h2><p>Cold plasma delays low radio frequencies by an amount proportional to DM × ν⁻². The curve is a strong astrophysical signature. But total DM combines our Galaxy, its halo, intergalactic gas, the host galaxy and the immediate burst environment.</p></div><div class="equation"><span>arrival delay</span><strong>Δt = k<sub>DM</sub> DM (ν⁻² − ν<sub>ref</sub>⁻²)</strong><small>For this measured DM, 400 MHz trails 800 MHz by 6.79398 s.</small></div></section>
+<section class="evidence" id="evidence"><div class="evidence-head"><div><p class="section-id">02 · THREE READINGS OF ONE BURST</p><h2>Signal → population → sightline.</h2></div><p id="viewSummary">Loading 535 public CHIME events…</p></div><div class="views" role="tablist"><button class="view active" data-view="sweep" role="tab" aria-selected="true"><span>01</span><b>The sweep</b><small>Why the pulse curves</small></button><button class="view" data-view="population" role="tab" aria-selected="false"><span>02</span><b>The catalogue</b><small>Where its DM sits</small></button><button class="view" data-view="sightline" role="tab" aria-selected="false"><span>03</span><b>The foreground problem</b><small>Why models disagree</small></button></div><div class="stage"><div class="plot"><div id="legend"></div><canvas id="mainChart" width="1400" height="720"></canvas><p id="caption"></p></div><aside id="finding"></aside></div></section>
+<section class="host"><div><p class="section-id">03 · A GALAXY CHANGES THE QUESTION</p><h2>Localization supplies the missing distance.</h2></div><div class="galaxy"><div class="spiral"><i></i><i></i><i></i></div><span>SDSS J015800.28+654253.0</span></div><div class="host-copy"><p>Very-long-baseline radio observations placed the repeater in a star-forming region of a massive spiral galaxy at <b>z = 0.0337 ± 0.0002</b>. With an independent redshift, DM becomes a probe of intervening matter rather than a guessed distance.</p><dl><div><dt>Position</dt><dd>RA 29.5°, Dec +65.72°</dd></div><div><dt>Environment</dt><dd>star-forming region</dd></div><div><dt>Key caution</dt><dd>low Galactic latitude +3.73°</dd></div></dl></div></section>
+<section class="boundary" id="boundary"><div><p class="section-id">04 · SCIENTIFIC BOUNDARY</p><h2>The result is the disagreement.</h2></div><div class="boundary-grid"><article><h3>Measured</h3><p>Total DM = 349.349 ± 0.006 pc cm⁻³ and the ν⁻² sweep.</p></article><article><h3>Model-dependent</h3><p>NE2001 leaves 150.4 pc cm⁻³ beyond the Galactic disk; YMW16 leaves only 24.5.</p></article><article><h3>Not identified here</h3><p>A unique IGM column, host contribution, DM-only redshift or progenitor mechanism.</p></article></div></section>
+<section class="methods"><div><p class="section-id">REPRODUCIBLE DATA PATH</p><h2>535 events, not five anchor dots.</h2></div><ol><li><b>Source</b><span>Public CHIME/FRB Catalog 1 JSON</span></li><li><b>Extract</b><span>DM, uncertainty, S/N, sky position and Galactic-model excess</span></li><li><b>Derive</b><span>Exact cold-plasma curve, distribution percentile and foreground comparison</span></li><li><b>Verify</b><span>Source hash and numerical regression tests</span></li></ol><div class="links"><a href="data/chime-catalog-1.json" download>Catalog JSON ↓</a><a href="data/frb20180916b-analysis.json" download>Derived analysis ↓</a><a href="https://doi.org/10.3847/1538-4365/ac33ab" target="_blank" rel="noopener">Catalog paper ↗</a><a href="https://doi.org/10.1038/s41586-019-1866-z" target="_blank" rel="noopener">Host paper ↗</a></div><p id="checksum"></p></section>
+</main><footer><span>Biswajit Jana · 2026</span><span>CHIME/FRB Catalog 1 · Marcote et al. 2020</span></footer><script src="app.js"></script></body></html>

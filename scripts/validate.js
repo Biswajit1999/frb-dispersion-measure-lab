@@ -1,15 +1,5 @@
-const fs=require('node:fs');
-const required=['README.md','index.html','styles.css','app.js','physicsWorker.js','data/reference.json'];
-let failures=[];
-for(const file of required){if(!fs.existsSync(file))failures.push(file+' missing')}
-const reference=JSON.parse(fs.readFileSync('data/reference.json','utf8'));
-if(!reference.points||reference.points.length<4)failures.push('reference data needs at least four points');
-for(const point of reference.points||[]){if(!Number.isFinite(point.x)||!Number.isFinite(point.y))failures.push('reference point is not finite')}
-const readme=fs.readFileSync('README.md','utf8');
-for(const citation of reference.requiredCitations||[]){if(!readme.includes(citation.split('.')[0]))failures.push('README missing citation family '+citation)}
-const combined=required.map(file=>fs.readFileSync(file,'utf8')).join('\n');
-const banned=['TO'+'DO','PLACE'+'HOLDER','insert '+'logic','coming '+'soon'];
-for(const token of banned){if(combined.toLowerCase().includes(token.toLowerCase()))failures.push('unfinished token '+token)}
-if(!combined.includes('physicsWorker.js'))failures.push('worker reference missing');
-if(failures.length){console.error(failures.join('\n'));process.exit(1)}
-console.log('FRB Dispersion Measure Lab: validation passed with '+reference.points.length+' reference anchors.');
+const fs=require('node:fs'),crypto=require('node:crypto');const fail=[];
+for(const f of ['index.html','styles.css','app.js','README.md','data/chime-catalog-1.json','data/frb20180916b-analysis.json','scripts/derive_chime_catalog.py'])if(!fs.existsSync(f))fail.push(f+' missing');
+const d=JSON.parse(fs.readFileSync('data/frb20180916b-analysis.json'));if(d.catalog.events!==535)fail.push('catalog record count');if(d.events.length!==535)fail.push('compact event count');if(d.sweep.length!==161)fail.push('sweep samples');if(Math.abs(d.target.dm-349.3490751229)>1e-8)fail.push('target DM');
+const hash=crypto.createHash('sha256').update(fs.readFileSync('data/chime-catalog-1.json')).digest('hex');if(hash!==d.provenance.source_sha256)fail.push('catalog hash');
+if(fail.length){console.error(fail.join('\n'));process.exit(1)}console.log('FRB validation passed: 535 events, verified catalog hash and 161-point dispersion curve.');
