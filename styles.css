@@ -61,7 +61,7 @@ pre { margin: 12px 0 0; white-space: pre-wrap; color: var(--muted); line-height:
 :root { color-scheme: light; --bg:#f4f0e8; --panel:#fffdf8; --panel-2:#f7f2ea; --line:#d9cfc0; --text:#191627; --muted:#655f70; --accent:#9e2f66; --accent-soft:rgba(158,47,102,.1); --marker:#c88625; }
 [data-theme="dark"] { color-scheme:dark; --bg:#100e18; --panel:#181421; --panel-2:#201a2b; --line:#3c3047; --text:#f5edf4; --muted:#b6a9ba; --accent:#f28ab8; --accent-soft:rgba(242,138,184,.12); --marker:#f1bd68; }
 html { scroll-behavior:smooth; }
-body { overflow:auto; background-image:linear-gradient(rgba(100,70,110,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(100,70,110,.04) 1px,transparent 1px); background-size:32px 32px; }
+body { overflow-x:hidden; background-image:linear-gradient(rgba(100,70,110,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(100,70,110,.04) 1px,transparent 1px); background-size:32px 32px; }
 a { color:inherit; }
 .skip-link { position:fixed; left:12px; top:-60px; z-index:100; padding:10px 14px; background:var(--text); color:var(--bg); }
 .skip-link:focus { top:12px; }
@@ -69,6 +69,10 @@ a { color:inherit; }
 .intro-kicker { color:var(--accent); font:700 11px var(--mono); letter-spacing:.18em; text-transform:uppercase; }
 .research-intro h2 { max-width:920px; margin:18px 0; font:500 clamp(42px,7vw,92px)/.94 Georgia,serif; letter-spacing:-.045em; }
 .research-intro .lede { max-width:760px; color:var(--muted); font-size:clamp(17px,2vw,22px); line-height:1.55; }
+.research-intro>* { min-width:0; }
+.intro-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:28px; }
+.intro-links a { display:inline-flex; align-items:center; min-height:44px; border:1px solid var(--line); border-radius:999px; padding:10px 15px; text-decoration:none; font:650 12px var(--sans); }
+.intro-links a:first-child { background:var(--text); color:var(--bg); border-color:var(--text); }
 .intro-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:28px; }
 .intro-actions a { border:1px solid var(--line); border-radius:999px; padding:10px 15px; text-decoration:none; font:650 12px var(--sans); }
 .intro-actions a:first-child { background:var(--text); color:var(--bg); border-color:var(--text); }
