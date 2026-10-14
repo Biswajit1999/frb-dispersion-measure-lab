@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this research software, please cite it using this metadata."
+title: "Six Seconds Through the Cosmic Web | FRB 20180916B"
+abstract: "Trace one real fast radio burst from its six-second frequency sweep to its host galaxy and uncertain electron-column budget."
+type: software
+authors:
+  - family-names: Jana
+    given-names: Biswajit
+repository-code: "https://github.com/Biswajit1999/frb-dispersion-measure-lab"
+url: "https://biswajit1999.github.io/frb-dispersion-measure-lab/"
+keywords:
+  - "astronomy"
+  - "astrophysics"
+  - "scientific computing"
+  - "galaxies"
+  - "large-scale structure"
+  - "observational astronomy"
+  - "fast radio bursts"
+  - "dispersion measure"
+  - "radio astronomy"
