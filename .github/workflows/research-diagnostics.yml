@@ -1,0 +1,23 @@
+name: FRB research diagnostics
+on:
+  push:
+    branches: ["research/**"]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  scientific-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements-research.txt pytest
+      - run: python -m pytest -q tests/test_dispersion_robustness.py
+      - run: python -m scripts.run_dispersion_robustness --output outputs/frb_robustness.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm run check
+      - run: npm run validate:research
