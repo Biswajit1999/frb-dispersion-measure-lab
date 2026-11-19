@@ -1,0 +1,16 @@
+{
+  "project": "Six Seconds Through the Cosmic Web",
+  "repository": "https://github.com/Biswajit1999/frb-dispersion-measure-lab",
+  "files": [
+    {
+      "label": "Chime catalog 1",
+      "path": "data/chime-catalog-1.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Frb20180916b analysis",
+      "path": "data/frb20180916b-analysis.json",
+      "role": "Data and provenance"
+    }
+  ]
+}

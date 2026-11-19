@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "project": "Six Seconds Through the Cosmic Web",
+  "repository": "https://github.com/Biswajit1999/frb-dispersion-measure-lab",
+  "files": [
+    {
+      "label": "Chime catalog 1",
+      "path": "data/chime-catalog-1.json",
+      "role": "Data and provenance",
+      "bytes": 1183885,
+      "sha256": "d7d375db9a5e2e2503307b733828a5cdd32cd26ded716486905413b6b97fd650",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "records": 535,
+      "fields": [
+        "bandwidth_high",
+        "bandwidth_low",
+        "bonsai_dm",
+        "bonsai_snr",
+        "box_car_width",
+        "dec",
+        "dec_error"
+      ]
+    },
+    {
+      "label": "Frb20180916b analysis",
+      "path": "data/frb20180916b-analysis.json",
+      "role": "Data and provenance",
+      "bytes": 93203,
+      "sha256": "088bb6f793e0430694795ad3be5093bf940598de3b443cea1c1b02f1f89635e4",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "schema_version",
+        "catalog",
+        "target",
+        "sweep",
+        "histogram",
+        "events",
+        "sightline"
+      ],
+      "arrays": {
+        "sweep": 161,
+        "histogram": 30,
+        "events": 535
+      }
+    }
+  ]
+}
