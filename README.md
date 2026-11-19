@@ -1,8 +1,12 @@
 # Six Seconds Through the Cosmic Web
 
-An evidence-led study of **FRB 20180916B** using all **535 one-event records** in the public CHIME/FRB Catalog 1 JSON. The interface replaces free-form sliders with three research readings: the measured cold-plasma sweep, the burst’s position in the survey distribution, and the disagreement between Galactic electron models.
+An evidence-led study of **FRB 20180916B** using all **535 one-event records** in the public CHIME/FRB Catalog 1 JSON. The interface shows the cold-plasma sweep predicted by the catalogue DM, the burst’s position in the survey distribution, and the disagreement between Galactic electron models.
 
 ## Results
+
+![Total dispersion measure in the CHIME catalogue and the residual after subtracting two Galactic disk models](assets/frb-dispersion-evidence.png)
+
+The left panel counts catalogue records at or below each DM. The right panel subtracts each Galactic disk prediction from the same measured total. The remainder can contain halo, intergalactic and host contributions. [Open the evidence figure and data](https://biswajit1999.github.io/frb-dispersion-measure-lab/#catalogue-figure). Install NumPy and Matplotlib, then run `python scripts/plot_dispersion_evidence.py` to regenerate it.
 
 - Catalogued DM: **349.349 ± 0.006 pc cm⁻³**
 - Predicted 400-to-800 MHz cold-plasma delay: **6.79398 s**
