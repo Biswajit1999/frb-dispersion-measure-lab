@@ -41,3 +41,15 @@ The JSON representation has 535 records because it stores one entry per event; t
 Measured: total DM, reported uncertainty, sky position and profile quantities. Derived: exact cold-plasma delay, survey percentile and the two catalogued Galactic-model excesses. Not inferred: a unique IGM column, unique host contribution, DM-only redshift, or progenitor mechanism.
 
 Biswajit Jana, 2026. MIT License.
+
+## Research evidence and downloads
+
+- [Browse the evidence file index](evidence/manifest.json) or open `evidence.html` from the checkout to inspect previews and downloads.
+- Start with [Chime catalog 1](data/chime-catalog-1.json), [Frb20180916b analysis](data/frb20180916b-analysis.json).
+
+Run these commands from the repository root to rebuild the published evidence.
+
+```sh
+python scripts/evidence_catalog.py
+python scripts/render_evidence_page.py
+```
